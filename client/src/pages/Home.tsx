@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2, Shield, Map, Compass, Building2, BarChart } from "lucide-react";
+import { ArrowRight, CheckCircle2, Shield, Map, Compass, Building2, BarChart, Phone } from "lucide-react";
 import heroImage from "@/assets/images/hero-survey.jpg";
 import engineersImage from "@/assets/images/about-engineers.jpg";
 import projectImage from "@/assets/images/project-infrastructure.jpg";
