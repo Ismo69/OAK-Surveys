@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { MapPin, Phone, Mail, ChevronRight } from "lucide-react";
+import logo from "@assets/Oak_surveys_logo_1773160685504.png";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,13 +12,8 @@ export function Footer() {
           
           {/* Brand Col */}
           <div>
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-secondary flex items-center justify-center rounded-sm">
-                <span className="text-white font-bold text-xl tracking-tighter">OS</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-heading font-black text-xl leading-none text-white uppercase tracking-wide">Oak Surveys</span>
-              </div>
+            <div className="mb-6">
+              <img src={logo} alt="Oak Surveys Logo" className="h-12 w-auto mb-4" />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6 pr-4">
               Professional land and engineering surveying practice established in 1974. Providing precise geospatial solutions for infrastructure and development across Nigeria.

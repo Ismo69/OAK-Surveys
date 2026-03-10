@@ -2,6 +2,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, MapPin, Phone, Mail } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import logo from "@assets/Oak_surveys_logo_1773160685504.png";
 
 export function Navbar() {
   const [location] = useLocation();
@@ -39,14 +40,8 @@ export function Navbar() {
         <div className="container mx-auto px-4 md:px-8 h-20 flex items-center justify-between">
           {/* Logo */}
           <Link href="/">
-            <div className="flex items-center gap-2 cursor-pointer">
-              <div className="w-10 h-10 bg-primary flex items-center justify-center rounded-sm">
-                <span className="text-white font-bold text-xl tracking-tighter">OS</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-heading font-black text-xl leading-none text-primary uppercase tracking-wide">Oak Surveys</span>
-                <span className="text-[10px] text-muted-foreground uppercase tracking-widest font-semibold">Since 1974</span>
-              </div>
+            <div className="flex items-center gap-3 cursor-pointer">
+              <img src={logo} alt="Oak Surveys Logo" className="h-12 w-auto" />
             </div>
           </Link>
 
