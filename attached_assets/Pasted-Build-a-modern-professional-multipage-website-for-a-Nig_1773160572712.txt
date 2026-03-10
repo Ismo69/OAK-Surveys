@@ -1,0 +1,178 @@
+Build a modern, professional multipage website for a Nigerian surveying and geospatial services company called Oak Surveys.
+
+This should be a premium corporate website for an established engineering/surveying firm, not a startup landing page and not a generic template.
+
+The company was established on March 1, 1974 and is based in Lagos, Nigeria. The firm provides professional surveying services for engineering, infrastructure, construction, land development, and geospatial mapping projects.
+
+The website should communicate credibility, precision, technical expertise, and decades of experience.
+
+Create a clean navigation bar with the following pages:
+
+- Home
+- About Us
+- Services
+- Contact Us
+
+Include a clear call-to-action button in the navbar such as “Request a Survey” or “Get a Quote”.
+
+The navbar should be sticky and minimal.
+
+VISUAL STYLE
+
+The design should feel like a high-end engineering or infrastructure consultancy website.
+
+Use the Oak Surveys logo color palette as the brand system:
+
+Primary brand color:
+Deep blue #001E60
+
+Accent color:
+Red #D4312A
+
+Neutral text color:
+Dark grey / near black #111111
+
+Background colors:
+White #FFFFFF
+Light grey #F5F7FA
+
+Use these colors professionally:
+- blue should dominate the website
+- red should be used sparingly for CTAs and highlights
+- keep most backgrounds white or light grey
+- maintain a clean, minimal, professional corporate feel
+
+Typography should feel modern and professional such as:
+- headings similar to Poppins or Montserrat
+- body text similar to Inter or Open Sans
+
+Use high-quality placeholder imagery showing:
+- surveying equipment
+- engineers on site
+- land surveying tools
+- construction sites
+- drones and mapping
+- infrastructure development
+- topographic maps or geospatial visuals
+
+HOMEPAGE STRUCTURE
+
+Design the homepage with strong visual hierarchy and the following sections:
+
+1. Hero Section
+Create a strong hero section with a headline that communicates trust and longevity.
+Use a tone like:
+“Professional Land & Engineering Surveying Since 1974”
+or
+“Trusted Surveying Expertise Since 1974”
+
+Include supporting text describing precision surveying services supporting infrastructure and development.
+
+Add two CTA buttons:
+- Request a Survey
+- View Services
+
+Use a strong visual related to surveying.
+
+2. Credibility / Trust Section
+Display key credibility indicators such as:
+- 50+ Years of Experience
+- Professional Surveying Expertise
+- Trusted by Infrastructure & Construction Projects
+
+3. About Oak Surveys (Short Version)
+Include:
+- established in 1974
+- professional surveying practice
+- strong ethical standards
+- members of the Nigerian Institution of Surveyors
+
+Include a button linking to the About page.
+
+4. Services Preview
+Display cards for:
+- Land Surveying
+- Geodetic Surveys
+- Hydrographic Surveys
+- Engineering Surveys
+- Geo-Information & Mapping
+
+Each card should include a short explanation.
+Include a “View All Services” button.
+
+5. Projects / Experience Section
+Showcase sample projects inspired by the company’s work such as:
+- Mapping of Kaduna–Karaduwa River Basin at Ruma
+- Establishment of Federal Capital Territory Boundary
+
+Present them as professional case highlights.
+
+6. Why Choose Oak Surveys
+Use a clean checklist style explaining benefits such as:
+- decades of field experience
+- accurate and reliable surveying data
+- modern surveying techniques
+- trusted by engineering and construction clients
+
+7. Call-to-Action Band
+Large section encouraging potential clients to request surveying services.
+
+8. Footer
+Professional footer with:
+- company info
+- quick links
+- services
+- contact details
+
+Include office address:
+No. 66 Eleshin Street
+Obalende
+Lagos, Nigeria
+
+ABOUT PAGE
+
+Include sections for:
+- company history
+- vision
+- mission
+- core values
+- professional credibility
+- membership in the Nigerian Institution of Surveyors
+
+SERVICES PAGE
+
+Create clear sections explaining:
+- Land Surveying
+- Geodetic Surveys
+- Hydrographic Surveys
+- Engineering Surveys
+- Geo-Information / Mapping
+
+Each service should include:
+- short description
+- typical use cases
+- client benefits
+
+CONTACT PAGE
+
+Include:
+- contact information
+- office address
+- contact form
+- map placeholder
+- call-to-action encouraging inquiries
+
+DESIGN QUALITY
+
+The design should look like a modern engineering consultancy website built in 2025–2026.
+
+Focus on:
+- clean layout
+- excellent spacing
+- clear typography hierarchy
+- professional visuals
+- subtle hover animations
+- responsive mobile layout
+
+Do not make the site look like a generic startup landing page.
+The website should communicate that Oak Surveys is a respected surveying firm with decades of experience serving engineering and infrastructure projects.
