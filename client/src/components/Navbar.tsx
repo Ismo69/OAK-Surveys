@@ -12,7 +12,7 @@ export function Navbar() {
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
     { name: "Services", path: "/services" },
-    { name: "Contact Us", path: "/contact" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
@@ -60,7 +60,7 @@ export function Navbar() {
                 </Link>
               ))}
             </div>
-            <Link href="/contact">
+            <Link href="/request-survey">
               <Button className="bg-secondary hover:bg-secondary/90 text-white font-semibold rounded-none px-6">
                 Request a Survey
               </Button>
@@ -91,7 +91,7 @@ export function Navbar() {
                 </span>
               </Link>
             ))}
-            <Link href="/contact">
+            <Link href="/request-survey">
               <Button className="w-full bg-secondary hover:bg-secondary/90 mt-4 py-6 text-lg rounded-none">
                 Request a Survey
               </Button>

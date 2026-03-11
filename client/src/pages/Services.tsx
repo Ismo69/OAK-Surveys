@@ -136,7 +136,7 @@ export default function Services() {
           <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">
             Every project has unique geospatial requirements. Discuss your specific needs with our principal surveyors.
           </p>
-          <Link href="/contact">
+          <Link href="/request-survey">
             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white rounded-none h-14 px-10 text-lg font-bold">
               Consult With Our Team
             </Button>

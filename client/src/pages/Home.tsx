@@ -36,7 +36,7 @@ export default function Home() {
               Professional land and engineering surveying practice providing precise geospatial solutions for infrastructure, construction, and development projects across Nigeria.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-in slide-in-from-bottom-8 duration-700 delay-500">
-              <Link href="/contact">
+              <Link href="/request-survey">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-bold rounded-none h-14 px-8 text-base shadow-lg shadow-secondary/20">
                   Request a Survey
                 </Button>
@@ -300,7 +300,7 @@ export default function Home() {
                       <p className="font-bold">+234 (0) 800 000 0000</p>
                     </div>
                   </div>
-                  <Link href="/contact" className="block">
+                  <Link href="/request-survey" className="block">
                     <Button className="w-full bg-secondary hover:bg-secondary/90 h-14 rounded-none text-base font-bold">
                       Request a Quote
                     </Button>
@@ -318,7 +318,7 @@ export default function Home() {
           <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
             Partner with Oak Surveys for reliable, professional geospatial data that forms the foundation of successful engineering and development.
           </p>
-          <Link href="/contact">
+          <Link href="/request-survey">
             <Button size="lg" className="bg-white text-primary hover:bg-gray-100 rounded-none h-14 px-10 text-lg font-bold shadow-xl">
               Contact Our Team Today
             </Button>

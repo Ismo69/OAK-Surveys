@@ -1,7 +1,5 @@
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 
 export default function Contact() {
   return (
@@ -14,119 +12,56 @@ export default function Contact() {
             <div className="w-8 h-[2px] bg-secondary"></div>
             <span className="text-secondary font-bold uppercase tracking-wider text-sm">Get in Touch</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6">Contact Oak Surveys</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6">Contact Us</h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl">
-            Request a quote, schedule a consultation, or inquire about our professional surveying services.
+            For general inquiries and information about our surveying services across Nigeria.
           </p>
         </div>
       </section>
 
       <section className="py-20 lg:py-32 bg-background">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="grid lg:grid-cols-5 gap-12 lg:gap-20">
+          <div className="max-w-4xl mx-auto">
             
             {/* Contact Information */}
-            <div className="lg:col-span-2 space-y-10">
-              <div>
+            <div className="space-y-10">
+              <div className="text-center mb-16">
                 <h2 className="text-3xl font-black text-primary mb-6">Our Office</h2>
-                <p className="text-muted-foreground text-lg mb-8">
+                <p className="text-muted-foreground text-lg">
                   We are headquartered in Lagos, providing surveying services across Nigeria for major infrastructure and development projects.
                 </p>
               </div>
 
-              <div className="space-y-8">
-                <div className="flex items-start gap-5">
-                  <div className="w-12 h-12 bg-muted flex items-center justify-center text-secondary shrink-0 rounded-sm">
-                    <MapPin size={24} />
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="flex flex-col items-center text-center p-8 bg-muted border border-border">
+                  <div className="w-16 h-16 bg-white flex items-center justify-center text-secondary mb-6 rounded-full shadow-sm">
+                    <MapPin size={28} />
                   </div>
-                  <div>
-                    <h4 className="font-bold text-primary text-lg mb-1">Head Office Address</h4>
-                    <p className="text-muted-foreground text-lg">
-                      No. 66 Eleshin Street<br />
-                      Obalende<br />
-                      Lagos, Nigeria
-                    </p>
-                  </div>
+                  <h4 className="font-bold text-primary text-lg mb-2">Head Office</h4>
+                  <p className="text-muted-foreground">
+                    No. 66 Eleshin Street<br />
+                    Obalende<br />
+                    Lagos, Nigeria
+                  </p>
                 </div>
 
-                <div className="flex items-start gap-5">
-                  <div className="w-12 h-12 bg-muted flex items-center justify-center text-secondary shrink-0 rounded-sm">
-                    <Phone size={24} />
+                <div className="flex flex-col items-center text-center p-8 bg-muted border border-border">
+                  <div className="w-16 h-16 bg-white flex items-center justify-center text-secondary mb-6 rounded-full shadow-sm">
+                    <Phone size={28} />
                   </div>
-                  <div>
-                    <h4 className="font-bold text-primary text-lg mb-1">Phone Enquiries</h4>
-                    <p className="text-muted-foreground text-lg">+234 (0) 800 000 0000</p>
-                    <p className="text-sm text-muted-foreground mt-1">Mon-Fri from 8am to 5pm</p>
-                  </div>
+                  <h4 className="font-bold text-primary text-lg mb-2">Call Us</h4>
+                  <p className="text-muted-foreground">+234 (0) 800 000 0000</p>
+                  <p className="text-sm text-muted-foreground mt-2">Mon-Fri: 8am - 5pm</p>
                 </div>
 
-                <div className="flex items-start gap-5">
-                  <div className="w-12 h-12 bg-muted flex items-center justify-center text-secondary shrink-0 rounded-sm">
-                    <Mail size={24} />
+                <div className="flex flex-col items-center text-center p-8 bg-muted border border-border">
+                  <div className="w-16 h-16 bg-white flex items-center justify-center text-secondary mb-6 rounded-full shadow-sm">
+                    <Mail size={28} />
                   </div>
-                  <div>
-                    <h4 className="font-bold text-primary text-lg mb-1">Email Us</h4>
-                    <p className="text-muted-foreground text-lg">info@oaksurveys.com.ng</p>
-                    <p className="text-sm text-muted-foreground mt-1">We aim to respond within 24 hours</p>
-                  </div>
+                  <h4 className="font-bold text-primary text-lg mb-2">Email Us</h4>
+                  <p className="text-muted-foreground">info@oaksurveys.com.ng</p>
+                  <p className="text-sm text-muted-foreground mt-2">Expect a reply within 24hrs</p>
                 </div>
-              </div>
-            </div>
-
-            {/* Contact Form */}
-            <div className="lg:col-span-3">
-              <div className="bg-white border border-border p-8 md:p-12 shadow-xl relative">
-                <div className="absolute top-0 left-0 w-full h-2 bg-secondary"></div>
-                <h3 className="text-2xl font-bold text-primary mb-8">Send Us a Message</h3>
-                
-                <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className="text-sm font-semibold text-primary">Full Name</label>
-                      <Input placeholder="John Doe" className="h-12 border-muted bg-muted/50 focus-visible:ring-secondary focus-visible:bg-white" />
-                    </div>
-                    <div className="space-y-2">
-                      <label className="text-sm font-semibold text-primary">Company / Organization</label>
-                      <Input placeholder="Engineering Co Ltd" className="h-12 border-muted bg-muted/50 focus-visible:ring-secondary focus-visible:bg-white" />
-                    </div>
-                  </div>
-
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className="text-sm font-semibold text-primary">Email Address</label>
-                      <Input type="email" placeholder="john@example.com" className="h-12 border-muted bg-muted/50 focus-visible:ring-secondary focus-visible:bg-white" />
-                    </div>
-                    <div className="space-y-2">
-                      <label className="text-sm font-semibold text-primary">Phone Number</label>
-                      <Input placeholder="+234 XXX XXXX" className="h-12 border-muted bg-muted/50 focus-visible:ring-secondary focus-visible:bg-white" />
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <label className="text-sm font-semibold text-primary">Service Required</label>
-                    <select className="flex h-12 w-full rounded-md border border-muted bg-muted/50 px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
-                      <option value="" disabled selected>Select a service...</option>
-                      <option value="land">Land Surveying</option>
-                      <option value="engineering">Engineering Surveys</option>
-                      <option value="hydro">Hydrographic Surveys</option>
-                      <option value="mapping">Geo-Information & Mapping</option>
-                      <option value="other">Other Inquiry</option>
-                    </select>
-                  </div>
-
-                  <div className="space-y-2">
-                    <label className="text-sm font-semibold text-primary">Project Details / Message</label>
-                    <Textarea 
-                      placeholder="Please provide details about your project location, scope, and timeline..." 
-                      className="min-h-[150px] resize-y border-muted bg-muted/50 focus-visible:ring-secondary focus-visible:bg-white p-4 text-base" 
-                    />
-                  </div>
-
-                  <Button className="w-full h-14 bg-primary hover:bg-primary/90 text-white rounded-none text-lg font-bold">
-                    Submit Inquiry
-                    <Send size={18} className="ml-2" />
-                  </Button>
-                </form>
               </div>
             </div>
 
