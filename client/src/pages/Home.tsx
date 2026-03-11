@@ -222,32 +222,43 @@ export default function Home() {
               <div className="w-8 h-[2px] bg-secondary"></div>
             </div>
             <h2 className="text-3xl md:text-5xl font-black text-primary leading-tight mb-6">
-              Proven Track Record
+              Selected Projects
             </h2>
             <p className="text-muted-foreground text-lg">
               Over the decades, we have been trusted with some of the nation's most significant mapping and surveying mandates.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-0 overflow-hidden shadow-2xl border border-border">
-            <img 
-              src={projectImage} 
-              alt="Infrastructure project" 
-              className="w-full h-full min-h-[400px] object-cover"
-            />
-            <div className="bg-primary text-white p-10 md:p-16 flex flex-col justify-center">
-              <h3 className="text-3xl font-bold mb-8">Notable Engagements</h3>
-              <div className="space-y-8">
-                <div className="border-l-2 border-secondary pl-6">
-                  <h4 className="text-xl font-bold mb-2">Establishment of Federal Capital Territory Boundary</h4>
-                  <p className="text-white/70">A landmark project defining the precise boundaries of the FCT, requiring extensive geodetic control and monumentation.</p>
-                </div>
-                <div className="border-l-2 border-secondary pl-6">
-                  <h4 className="text-xl font-bold mb-2">Mapping of Kaduna–Karaduwa River Basin at Ruma</h4>
-                  <p className="text-white/70">Comprehensive topographic and hydrographic surveys supporting critical water resource management and agricultural development.</p>
-                </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Mapping of Kaduna–Karaduwa River Basin",
+                desc: "Comprehensive basin mapping and boundary demarcation to support water resource planning, land management, and geospatial decision-making."
+              },
+              {
+                title: "Establishment of Federal Capital Territory Boundary",
+                desc: "Boundary beaconing and geodetic control work supporting the accurate demarcation of the Federal Capital Territory boundary."
+              },
+              {
+                title: "Topographic Mapping for LSDPC, Ogudu Phase II",
+                desc: "Topographic mapping and GIS-ready terrain data prepared to support urban planning and development in Ogudu Phase II."
+              }
+            ].map((project, idx) => (
+              <div key={idx} className="bg-muted p-8 border-t-4 border-secondary hover:shadow-xl transition-all duration-300">
+                <h3 className="text-xl font-bold text-primary mb-4 leading-snug">{project.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {project.desc}
+                </p>
               </div>
-            </div>
+            ))}
+          </div>
+          
+          <div className="text-center mt-12">
+            <Link href="/about">
+              <Button variant="outline" className="rounded-none border-primary text-primary hover:bg-primary hover:text-white h-12 px-8">
+                View More Experience
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

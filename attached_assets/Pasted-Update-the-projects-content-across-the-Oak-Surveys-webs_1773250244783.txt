@@ -1,0 +1,124 @@
+Update the projects content across the Oak Surveys website to make it more concise, more professional, and easier to scan.
+
+PROJECTS STRATEGY
+
+Keep the homepage projects section as a short “Proven Track Record” or “Selected Projects” preview with only 3 featured projects.
+
+For the homepage:
+- keep descriptions very short
+- use only 1 sentence per project
+- focus on credibility and scope
+- do not make the cards text-heavy
+
+Also add or refine a “Notable Projects” section on the About page.
+For the About page:
+- show 5 project cards maximum
+- each project should have a concise 1–2 sentence description
+- optionally include client and duration in a subtle secondary line
+- avoid long paragraphs and too much technical detail
+- the layout should feel clean, premium, and professional
+
+DESIGN DIRECTION
+
+- Use elegant project cards with consistent spacing
+- Keep the section visually balanced and not crowded
+- Make the projects feel like proof of capability, not like a report archive
+- Maintain the premium corporate design language of the site
+- If there are images, keep them secondary to the text and avoid clutter
+
+USE THIS PROJECT CONTENT
+
+HOMEPAGE FEATURED PROJECTS
+Use these 3 projects on the homepage with very short descriptions:
+
+1. Mapping of Kaduna–Karaduwa River Basin at Ruma
+Short description:
+Comprehensive basin mapping and boundary demarcation to support water resource planning, land management, and geospatial decision-making.
+
+2. Establishment of Federal Capital Territory Boundary
+Short description:
+Boundary beaconing and geodetic control work supporting the accurate demarcation of the Federal Capital Territory boundary.
+
+3. Topographic Mapping for LSDPC, Ogudu Phase II
+Short description:
+Topographic mapping and GIS-ready terrain data prepared to support urban planning and development in Ogudu Phase II.
+
+ABOUT PAGE / NOTABLE PROJECTS
+Create or refine a “Notable Projects” section using these 5 projects and concise descriptions:
+
+1. Mapping of Kaduna–Karaduwa River Basin at Ruma
+Description:
+Reservoir boundary demarcation, flood-level referencing, and geospatial mapping carried out to support water resource planning and land-use management.
+
+Client:
+Department of Water Resources, Ruma State
+
+Duration:
+6 months
+
+2. Establishment of Federal Capital Territory Boundary
+Description:
+Boundary beaconing and GPS-based control surveys executed to support the official demarcation and documentation of the Federal Capital Territory boundary.
+
+Client:
+Federal Capital Development Authority (FCDA)
+
+Duration:
+12 months
+
+3. Large Scale Mapping of Local Government Headquarters
+Description:
+Comprehensive large-scale mapping across selected local government headquarters in Borno and Niger States to support planning, infrastructure development, and administration.
+
+Client:
+Relevant local government authorities in Borno State and Niger State
+
+Duration:
+Several months
+
+4. Electricity Transmission Line Route Surveying – 45 km, Akwa Ibom State
+Description:
+Route surveying carried out from Ikot-Abasi to Eket to provide accurate spatial data for transmission line planning and engineering coordination.
+
+Client:
+Add placeholder if official client is not yet available
+
+Duration:
+Add placeholder if exact duration is not yet available
+
+5. Topographic Mapping for LSDPC, Ogudu Phase II
+Description:
+Detailed topographic mapping and GIS-integrated deliverables prepared for improved planning, land-use analysis, and future development decisions.
+
+Client:
+Lagos State Development and Property Corporation (LSDPC)
+
+Duration:
+4 months
+
+IMPORTANT CONTENT RULES
+
+- Rewrite the descriptions in polished, modern business language
+- Keep the homepage project descriptions very short
+- Keep the About page project descriptions concise and scannable
+- Do not include all the original detailed text
+- Do not use bullet-heavy project cards
+- Do not overcrowd the page
+- Focus on clarity, credibility, and professionalism
+
+LAYOUT RULES
+
+Homepage:
+- 3 featured project cards only
+- short title + one-line description
+- optional subtle “View More” style cue leading to the About page or project section
+
+About page:
+- maximum of 5 notable project cards
+- cards should feel refined and structured
+- if client and duration are shown, style them as subtle metadata
+- ensure strong spacing and visual hierarchy
+
+FINAL GOAL
+
+The projects should strengthen Oak Surveys’ credibility and experience without overwhelming the visitor. The overall effect should feel curated, premium, and easy to understand.

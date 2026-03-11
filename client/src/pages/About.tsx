@@ -204,6 +204,75 @@ export default function About() {
         </div>
       </section>
 
+      {/* Notable Projects */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-8 h-[2px] bg-secondary"></div>
+              <span className="text-secondary font-bold uppercase tracking-wider text-sm">Experience</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-black text-primary mb-12">Notable Projects</h2>
+
+            <div className="space-y-6">
+              {[
+                {
+                  title: "Mapping of Kaduna–Karaduwa River Basin at Ruma",
+                  desc: "Reservoir boundary demarcation, flood-level referencing, and geospatial mapping carried out to support water resource planning and land-use management.",
+                  client: "Department of Water Resources, Ruma State",
+                  duration: "6 months"
+                },
+                {
+                  title: "Establishment of Federal Capital Territory Boundary",
+                  desc: "Boundary beaconing and GPS-based control surveys executed to support the official demarcation and documentation of the Federal Capital Territory boundary.",
+                  client: "Federal Capital Development Authority (FCDA)",
+                  duration: "12 months"
+                },
+                {
+                  title: "Large Scale Mapping of Local Government Headquarters",
+                  desc: "Comprehensive large-scale mapping across selected local government headquarters in Borno and Niger States to support planning, infrastructure development, and administration.",
+                  client: "Relevant local government authorities in Borno State and Niger State",
+                  duration: "Several months"
+                },
+                {
+                  title: "Electricity Transmission Line Route Surveying – 45 km, Akwa Ibom State",
+                  desc: "Route surveying carried out from Ikot-Abasi to Eket to provide accurate spatial data for transmission line planning and engineering coordination.",
+                  client: "Undisclosed Client",
+                  duration: "Project specific duration"
+                },
+                {
+                  title: "Topographic Mapping for LSDPC, Ogudu Phase II",
+                  desc: "Detailed topographic mapping and GIS-integrated deliverables prepared for improved planning, land-use analysis, and future development decisions.",
+                  client: "Lagos State Development and Property Corporation (LSDPC)",
+                  duration: "4 months"
+                }
+              ].map((project, idx) => (
+                <div key={idx} className="bg-muted p-8 md:p-10 border border-border hover:border-secondary transition-colors duration-300">
+                  <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
+                    <div className="md:w-3/4">
+                      <h3 className="text-xl md:text-2xl font-bold text-primary mb-3 leading-snug">{project.title}</h3>
+                      <p className="text-muted-foreground text-lg leading-relaxed">
+                        {project.desc}
+                      </p>
+                    </div>
+                    <div className="md:w-1/4 md:text-right border-t md:border-t-0 md:border-l border-gray-200 pt-4 md:pt-0 md:pl-6">
+                      <div className="mb-3">
+                        <span className="block text-xs uppercase tracking-wider text-muted-foreground font-semibold mb-1">Client</span>
+                        <span className="text-sm text-primary font-medium">{project.client}</span>
+                      </div>
+                      <div>
+                        <span className="block text-xs uppercase tracking-wider text-muted-foreground font-semibold mb-1">Duration</span>
+                        <span className="text-sm text-primary font-medium">{project.duration}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Mission, Vision, Values */}
       <section className="py-20 bg-[#0A1128] text-white">
         <div className="container mx-auto px-4 md:px-8">
