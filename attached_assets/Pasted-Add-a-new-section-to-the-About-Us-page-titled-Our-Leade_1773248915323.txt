@@ -1,0 +1,70 @@
+Add a new section to the About Us page titled:
+
+“Our Leadership”
+
+This section should feel professional, credible, and refined. It should communicate strong leadership, continuity, and expertise in a way that fits the premium corporate tone of the Oak Surveys website.
+
+Place this section after the founder legacy section and before the Vision / Mission / Values section.
+
+LAYOUT
+
+Create a leadership profile section for one person only for now.
+
+Use a clean editorial-style two-column layout on desktop:
+- left side: leadership photo
+- right side: text content
+
+On mobile, stack the image above the text.
+
+DESIGN DIRECTION
+
+- Make the section feel polished, authoritative, and modern
+- Use generous spacing and a clean layout
+- Keep the background minimal: white or very light grey
+- Use the Oak Surveys brand colors subtly and professionally
+- Use the primary blue (#001E60) for headings and important text
+- Use the red accent (#D4312A) sparingly for small highlights or dividers
+- Ensure the section feels premium and consistent with the rest of the site
+- The profile should feel like leadership content for an established professional firm, not like a casual team card
+
+PHOTO TREATMENT
+
+- Present the leadership image in a refined way with balanced proportions
+- Use a clean frame or card style with soft shadow and rounded corners
+- If needed, apply a subtle tonal treatment so the image feels cohesive with the rest of the website
+
+TEXT STRUCTURE
+
+Use this hierarchy:
+
+1. Section title: Our Leadership
+2. Name
+3. Role / title
+4. Leadership description
+5. Highlight quote
+
+CONTENT
+
+Use the following content, but refine the copy so it sounds more polished, concise, and professional for a modern business website.
+
+Name:
+Surv. Kolade Kasim
+
+Role:
+Managing Partner & CEO
+
+Description:
+Kolade Kasim, the current Managing Partner and CEO of Oak Surveys, is a seasoned leader in the surveying and geoinformatics industry. With extensive professional experience and a strong commitment to excellence, he continues to guide the firm with a forward-looking vision rooted in precision, professionalism, and responsible development.
+
+In addition to leading Oak Surveys, he serves as Chairman of the Nigerian Institution of Surveyors, Lagos, reflecting his active role in advancing the profession and promoting high standards across the industry.
+
+Quote:
+“For any meaningful development, consulting surveyors is crucial. Just like in smart cities around the world, surveyors play a vital role in ensuring quality and responsible development.”
+
+IMPORTANT
+
+- Refine the text to make it read naturally and professionally
+- Do not make the copy too long
+- Present the quote in a distinguished way, such as a pull quote or highlighted block
+- Make the overall section feel like a strong leadership statement for an established surveying firm
+- Ensure the section integrates naturally into the About page and strengthens the company’s credibility

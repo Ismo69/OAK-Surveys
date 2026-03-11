@@ -1,6 +1,7 @@
-import { Shield, Target, Eye, Users, ChevronRight, GraduationCap, CheckCircle2 } from "lucide-react";
+import { Shield, Target, Eye, Users, ChevronRight, GraduationCap, CheckCircle2, Quote } from "lucide-react";
 import engineersImage from "@/assets/images/about-engineers.jpg";
 import founderImage from "@assets/dad_pic_1773246913134.jpg";
+import leadershipImage from "@assets/uncle_k_pic_1773248943929.png";
 
 export default function About() {
   return (
@@ -125,6 +126,75 @@ export default function About() {
 
                   <p className="font-medium text-primary italic pt-4">
                     We honor his memory with deep respect and gratitude.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Leadership */}
+      <section className="py-24 bg-muted/30 border-t border-border">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-col md:flex-row-reverse gap-12 lg:gap-20 items-start">
+              
+              {/* Image Column */}
+              <div className="w-full md:w-5/12 lg:w-2/5 shrink-0">
+                <div className="sticky top-32">
+                  <div className="relative p-3 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.08)] rounded-sm border border-gray-100">
+                    <img 
+                      src={leadershipImage} 
+                      alt="Surv. Kolade Kasim" 
+                      className="w-full aspect-[4/5] object-cover object-top grayscale-[20%] contrast-110"
+                    />
+                    {/* Decorative subtle border */}
+                    <div className="absolute inset-0 border-[0.5px] border-primary/10 m-1 pointer-events-none"></div>
+                  </div>
+                  {/* Subtle red accent line under image */}
+                  <div className="w-12 h-1 bg-secondary mt-6 ml-auto mr-2"></div>
+                </div>
+              </div>
+
+              {/* Text Column */}
+              <div className="w-full md:w-7/12 lg:w-3/5">
+                <div className="mb-10">
+                  <div className="flex items-center gap-2 mb-6">
+                    <div className="w-8 h-[2px] bg-secondary"></div>
+                    <span className="text-secondary font-bold uppercase tracking-wider text-sm">Our Leadership</span>
+                  </div>
+                  
+                  <div className="mb-8 pb-8 border-b border-gray-200">
+                    <h3 className="text-3xl md:text-4xl font-black text-primary mb-3">
+                      Surv. Kolade Kasim
+                    </h3>
+                    <p className="text-xl text-muted-foreground font-medium">
+                      Managing Partner & CEO
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-6 text-lg text-muted-foreground leading-relaxed font-sans font-light mb-10">
+                  <p>
+                    Kolade Kasim is a seasoned leader in the surveying and geoinformatics industry, guiding Oak Surveys with a forward-looking vision rooted in precision and responsible development.
+                  </p>
+                  
+                  <p>
+                    With extensive professional experience and an unwavering commitment to technical excellence, he leads the firm's strategic operations across major infrastructure and development projects in Nigeria.
+                  </p>
+
+                  <p>
+                    Beyond Oak Surveys, he serves as the Chairman of the Nigerian Institution of Surveyors (Lagos Chapter), reflecting his active dedication to advancing the profession, advocating for standard practices, and elevating industry benchmarks.
+                  </p>
+                </div>
+
+                {/* Highlight Quote */}
+                <div className="bg-white p-8 md:p-10 border-l-4 border-secondary shadow-sm relative">
+                  <Quote className="absolute top-6 right-8 text-primary/10 w-16 h-16" />
+                  <p className="text-xl md:text-2xl font-heading font-medium text-primary leading-snug italic relative z-10">
+                    "For any meaningful development, consulting surveyors is crucial. Just like in smart cities around the world, surveyors play a vital role in ensuring quality and responsible development."
                   </p>
                 </div>
               </div>
