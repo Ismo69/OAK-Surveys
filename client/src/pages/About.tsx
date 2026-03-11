@@ -1,5 +1,6 @@
 import { Shield, Target, Eye, Users, ChevronRight, GraduationCap, CheckCircle2 } from "lucide-react";
 import engineersImage from "@/assets/images/about-engineers.jpg";
+import founderImage from "@assets/dad_pic_1773246913134.jpg";
 
 export default function About() {
   return (
@@ -60,6 +61,74 @@ export default function About() {
                   <div className="font-bold text-primary leading-tight">Years of<br />Excellence</div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Honoring the Legacy of Our Founder */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-start">
+              
+              {/* Image Column */}
+              <div className="w-full md:w-5/12 lg:w-2/5 shrink-0">
+                <div className="sticky top-32">
+                  <div className="relative p-3 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.08)] rounded-sm border border-gray-100">
+                    <img 
+                      src={founderImage} 
+                      alt="Surv. (Alh.) Olatunde Al-Ghali Kasim, FNIS" 
+                      className="w-full h-auto object-cover grayscale-[40%] contrast-125 brightness-95"
+                    />
+                    {/* Decorative subtle border */}
+                    <div className="absolute inset-0 border-[0.5px] border-primary/10 m-1 pointer-events-none"></div>
+                  </div>
+                  {/* Subtle red accent line under image */}
+                  <div className="w-12 h-1 bg-secondary mt-6 ml-2"></div>
+                </div>
+              </div>
+
+              {/* Text Column */}
+              <div className="w-full md:w-7/12 lg:w-3/5">
+                <div className="mb-10">
+                  <h2 className="text-3xl font-heading font-black text-primary uppercase tracking-wide mb-8">
+                    Honoring the Legacy of Our Founder
+                  </h2>
+                  
+                  <div className="mb-8 pb-8 border-b border-gray-100">
+                    <h3 className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                      Surv. (Alh.) Olatunde Al-Ghali Kasim, FNIS
+                    </h3>
+                    <p className="text-secondary font-medium tracking-wide">
+                      16 January 1940 – 28 February 2018
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-6 text-lg text-muted-foreground leading-relaxed font-sans font-light">
+                  <p>
+                    Surv. (Alh.) Olatunde Al-Ghali Kasim was a distinguished surveying professional, visionary leader, and respected figure within the Nigerian surveying community. Born in Ijebu Ode, he devoted his life to advancing the surveying profession and contributing meaningfully to national development.
+                  </p>
+                  
+                  <p>
+                    Throughout his career, he played an influential role within the Nigerian Institution of Surveyors, where his leadership helped drive important initiatives for the profession. His tenure was marked by significant milestones, including key institutional developments such as the acquisition of the Surveyors Tower in Lagos. His contributions also extended to national institutions, including the National Boundary Commission and the National Space Programme, where his expertise supported important national initiatives.
+                  </p>
+
+                  <p>
+                    As the founder of Oak Surveys, Surv. Kasim established the firm on the principles of professionalism, integrity, and technical excellence. His dedication to the surveying profession and commitment to high standards laid the foundation upon which the company continues to operate today.
+                  </p>
+
+                  <p>
+                    His legacy continues to inspire our work and guide our values as we strive to uphold the same standards of precision, service, and professionalism that defined his career.
+                  </p>
+
+                  <p className="font-medium text-primary italic pt-4">
+                    We honor his memory with deep respect and gratitude.
+                  </p>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

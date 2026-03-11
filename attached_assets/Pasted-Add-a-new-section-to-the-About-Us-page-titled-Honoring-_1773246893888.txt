@@ -1,0 +1,77 @@
+Add a new section to the About Us page titled:
+
+“Honoring the Legacy of Our Founder”
+
+This section should feel respectful, refined, and visually elegant. It should not feel like a memorial page, but rather a legacy section that communicates the history, credibility, and values behind Oak Surveys.
+
+Place this section after the Company History section and before the Vision / Mission / Values section.
+
+LAYOUT
+
+Use a clean two-column layout on desktop:
+- left side: founder photo
+- right side: text content
+
+On mobile devices the layout should stack vertically with the image above the text.
+
+DESIGN DIRECTION
+
+Design this section so it feels premium, editorial, and timeless — similar to how established professional firms present their founders.
+
+Follow these design principles:
+
+• Use generous spacing and padding around the section so it feels important and distinguished  
+• Keep the background minimal (white or very light grey)  
+• Add subtle design accents using the Oak Surveys brand colors  
+• Use the brand red (#D4312A) very sparingly as an accent line, divider, or small highlight element  
+• Maintain the corporate blue (#001E60) for headings and strong text elements  
+• Ensure the typography hierarchy is elegant and clear
+
+FOUNDER IMAGE
+
+• The founder photo should appear on the left side on desktop  
+• The image should feel dignified and professional  
+• Apply a tasteful black-and-white or slightly muted tonal treatment to give the image a timeless look  
+• Use a refined card or framed container for the image with soft shadow and rounded corners  
+• The image should not be oversized — keep it balanced with the text
+
+TEXT DESIGN
+
+Structure the text with clear hierarchy:
+
+1. Section title
+2. Founder name
+3. Dates
+4. Main text
+
+Style the name and dates so they feel distinguished and readable.
+
+Ensure the paragraph width is not too wide and maintain comfortable line spacing.
+
+CONTENT
+
+Use the following refined copy:
+
+Surv. (Alh.) Olatunde Al-Ghali Kasim, FNIS  
+16 January 1940 – 28 February 2018
+
+Surv. (Alh.) Olatunde Al-Ghali Kasim was a distinguished surveying professional, visionary leader, and respected figure within the Nigerian surveying community. Born in Ijebu Ode, he devoted his life to advancing the surveying profession and contributing meaningfully to national development.
+
+Throughout his career, he played an influential role within the Nigerian Institution of Surveyors, where his leadership helped drive important initiatives for the profession. His tenure was marked by significant milestones, including key institutional developments such as the acquisition of the Surveyors Tower in Lagos. His contributions also extended to national institutions, including the National Boundary Commission and the National Space Programme, where his expertise supported important national initiatives.
+
+As the founder of Oak Surveys, Surv. Kasim established the firm on the principles of professionalism, integrity, and technical excellence. His dedication to the surveying profession and commitment to high standards laid the foundation upon which the company continues to operate today.
+
+His legacy continues to inspire our work and guide our values as we strive to uphold the same standards of precision, service, and professionalism that defined his career.
+
+We honor his memory with deep respect and gratitude.
+
+FINAL DESIGN GOAL
+
+Ensure this section feels:
+
+• respectful and dignified  
+• visually balanced  
+• editorial and premium in presentation  
+• consistent with the modern corporate design of the website  
+
+This section should strengthen the credibility and story of Oak Surveys by highlighting the legacy of its founder while maintaining the professional tone of the site.
