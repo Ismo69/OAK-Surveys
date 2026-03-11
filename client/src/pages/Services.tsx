@@ -1,6 +1,10 @@
 import { Map, Compass, Waves, Building2, BarChart, ArrowRight, Check } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import landImage from "@/assets/images/service-land.jpg";
+import engineeringImage from "@/assets/images/service-engineering.jpg";
+import geodeticImage from "@/assets/images/service-geodetic.jpg";
+import hydrographicImage from "@/assets/images/service-hydrographic.jpg";
 import droneImage from "@/assets/images/service-drone.jpg";
 
 export default function Services() {
@@ -11,7 +15,8 @@ export default function Services() {
       icon: <Map className="w-10 h-10" />,
       description: "Comprehensive land surveying services for property establishment, boundary disputes, and title registrations.",
       useCases: ["Boundary Demarcation", "Cadastral Mapping", "Subdivision Surveys", "Title Registrations"],
-      benefits: "Secure legal boundaries and prevent costly land disputes before development begins."
+      benefits: "Secure legal boundaries and prevent costly land disputes before development begins.",
+      image: landImage
     },
     {
       id: "engineering-surveys",
@@ -19,7 +24,8 @@ export default function Services() {
       icon: <Building2 className="w-10 h-10" />,
       description: "High-precision surveying to support civil engineering, construction, and infrastructure projects from design to completion.",
       useCases: ["Setting Out / Layout", "As-Built Surveys", "Deformation Monitoring", "Earthwork Computations"],
-      benefits: "Ensure structural elements are constructed exactly to design specifications, minimizing rework."
+      benefits: "Ensure structural elements are constructed exactly to design specifications, minimizing rework.",
+      image: engineeringImage
     },
     {
       id: "geodetic-surveys",
@@ -27,7 +33,8 @@ export default function Services() {
       icon: <Compass className="w-10 h-10" />,
       description: "Large-scale surveying that accounts for the curvature of the earth, establishing control networks for major projects.",
       useCases: ["Control Networks Establishment", "GPS/GNSS Surveys", "Datum Transformations"],
-      benefits: "Provide a reliable, consistent coordinate framework for large-scale municipal or state infrastructure."
+      benefits: "Provide a reliable, consistent coordinate framework for large-scale municipal or state infrastructure.",
+      image: geodeticImage
     },
     {
       id: "hydrographic-surveys",
@@ -35,7 +42,8 @@ export default function Services() {
       icon: <Waves className="w-10 h-10" />,
       description: "Mapping of underwater topography for marine engineering, dredging, and navigation purposes.",
       useCases: ["Bathymetric Mapping", "Dredging Support", "River Basin Mapping", "Coastal Development"],
-      benefits: "Accurate underwater terrain models for safe navigation and effective marine construction."
+      benefits: "Accurate underwater terrain models for safe navigation and effective marine construction.",
+      image: hydrographicImage
     },
     {
       id: "geo-information",
@@ -43,7 +51,8 @@ export default function Services() {
       icon: <BarChart className="w-10 h-10" />,
       description: "Advanced spatial data collection, analysis, and visualization using modern GIS and remote sensing tools.",
       useCases: ["Topographic Mapping", "UAV/Drone Photogrammetry", "GIS Database Creation", "Spatial Analysis"],
-      benefits: "Visualize complex spatial relationships to support urban planning, agriculture, and resource management."
+      benefits: "Visualize complex spatial relationships to support urban planning, agriculture, and resource management.",
+      image: droneImage
     }
   ];
 
@@ -103,24 +112,7 @@ export default function Services() {
                 {/* Visual Placeholder for Service */}
                 <div className="lg:w-1/2 w-full">
                   <div className="bg-muted aspect-video border border-border flex items-center justify-center relative overflow-hidden group">
-                     {service.id === "geo-information" ? (
-                       <img src={droneImage} alt="Drone Mapping" className="w-full h-full object-cover" />
-                     ) : (
-                       <div className="absolute inset-0 opacity-10" 
-                            style={{backgroundImage: 'radial-gradient(var(--color-primary) 2px, transparent 2px)', backgroundSize: '30px 30px'}}>
-                       </div>
-                     )}
-                     
-                     {service.id !== "geo-information" && (
-                       <div className="text-center relative z-10 p-8">
-                         <div className="text-primary/20 mb-4 flex justify-center scale-150">
-                           {service.icon}
-                         </div>
-                         <p className="text-muted-foreground font-medium uppercase tracking-widest text-sm">
-                           {service.title} Visual
-                         </p>
-                       </div>
-                     )}
+                     <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
