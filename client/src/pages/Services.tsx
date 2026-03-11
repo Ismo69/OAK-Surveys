@@ -1,7 +1,7 @@
 import { Map, Compass, Waves, Building2, BarChart, ArrowRight, Check } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import landImage from "@/assets/images/service-land.jpg";
+import landImage from "@/assets/images/service-land-equipment.jpg";
 import engineeringImage from "@/assets/images/service-engineering.jpg";
 import geodeticImage from "@/assets/images/service-geodetic.jpg";
 import hydrographicImage from "@/assets/images/service-hydrographic.jpg";
