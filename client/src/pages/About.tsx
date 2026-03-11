@@ -79,7 +79,7 @@ export default function About() {
                     <img 
                       src={founderImage} 
                       alt="Surv. (Alh.) Olatunde Al-Ghali Kasim, FNIS" 
-                      className="w-full h-auto object-cover grayscale-[40%] contrast-125 brightness-95"
+                      className="w-full h-auto object-cover grayscale contrast-125 brightness-95"
                     />
                     {/* Decorative subtle border */}
                     <div className="absolute inset-0 border-[0.5px] border-primary/10 m-1 pointer-events-none"></div>
