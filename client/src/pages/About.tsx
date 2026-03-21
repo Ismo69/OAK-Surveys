@@ -1,5 +1,5 @@
 import { Shield, Target, Eye, Users, ChevronRight, GraduationCap, CheckCircle2, Quote } from "lucide-react";
-import historyImage from "@/assets/images/about-history.jpg";
+import historyImage from "@/assets/images/about-history-generated.png";
 import founderImage from "@assets/dad_pic_1773246913134.jpg";
 import leadershipImage from "@assets/uncle_k_pic_1773248943929.png";
 
