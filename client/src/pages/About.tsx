@@ -1,5 +1,5 @@
 import { Shield, Target, Eye, Users, ChevronRight, GraduationCap, CheckCircle2, Quote } from "lucide-react";
-import engineersImage from "@/assets/images/about-engineers.jpg";
+import historyImage from "@/assets/images/about-history.jpg";
 import founderImage from "@assets/dad_pic_1773246913134.jpg";
 import leadershipImage from "@assets/uncle_k_pic_1773248943929.png";
 
@@ -52,7 +52,7 @@ export default function About() {
             <div className="relative">
               <div className="absolute inset-0 bg-primary translate-x-6 translate-y-6 -z-10 hidden md:block"></div>
               <img 
-                src={engineersImage} 
+                src={historyImage} 
                 alt="Oak Surveys founding principles" 
                 className="w-full aspect-[4/5] object-cover border border-border shadow-xl"
               />
