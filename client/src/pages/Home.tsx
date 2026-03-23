@@ -311,7 +311,7 @@ export default function Home() {
                     <Phone className="text-secondary" />
                     <div>
                       <p className="text-xs text-white/60 uppercase tracking-wider">Call Us Today</p>
-                      <p className="font-bold">+234 (0) 800 000 0000</p>
+                      <p className="font-bold">+2348036004494</p>
                     </div>
                   </div>
                   <Link href="/request-survey" className="block">

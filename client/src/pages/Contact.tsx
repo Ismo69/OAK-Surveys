@@ -106,7 +106,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-primary text-base mb-1">Call Us</h4>
-                    <p className="text-muted-foreground">+234 (0) 800 000 0000</p>
+                    <p className="text-muted-foreground">+2348036004494</p>
                     <p className="text-sm text-muted-foreground mt-1">Mon–Fri: 8am – 5pm</p>
                   </div>
                 </div>
