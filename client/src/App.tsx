@@ -17,7 +17,19 @@ import RequestSurvey from "@/pages/RequestSurvey";
 function ScrollToTop() {
   const [location] = useLocation();
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" });
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        const el = document.querySelector(hash);
+        if (el) {
+          const navbarHeight = 80;
+          const top = el.getBoundingClientRect().top + window.scrollY - navbarHeight;
+          window.scrollTo({ top, behavior: "smooth" });
+        }
+      }, 80);
+    } else {
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }
   }, [location]);
   return null;
 }

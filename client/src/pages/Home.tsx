@@ -180,17 +180,20 @@ export default function Home() {
               {
                 title: "Land Surveying",
                 desc: "Boundary demarcation, topographic surveys, and cadastral mapping for property development.",
-                icon: <Map size={32} />
+                icon: <Map size={32} />,
+                slug: "land-surveying"
               },
               {
                 title: "Engineering Surveys",
                 desc: "Setting out for construction, as-built surveys, and precise monitoring of structures.",
-                icon: <Building2 size={32} />
+                icon: <Building2 size={32} />,
+                slug: "engineering-surveys"
               },
               {
                 title: "Geo-Information",
                 desc: "GIS mapping, spatial data analysis, and drone-based photogrammetry.",
-                icon: <BarChart size={32} />
+                icon: <BarChart size={32} />,
+                slug: "geo-information"
               }
             ].map((service, idx) => (
               <div key={idx} className="bg-white p-8 border border-border hover:border-secondary hover:shadow-xl transition-all duration-300 group">
@@ -201,7 +204,7 @@ export default function Home() {
                 <p className="text-muted-foreground mb-6 line-clamp-3">
                   {service.desc}
                 </p>
-                <Link href="/services">
+                <Link href={`/services#${service.slug}`}>
                   <span className="text-secondary font-semibold flex items-center gap-2 text-sm hover:gap-3 transition-all cursor-pointer">
                     Learn More <ArrowRight size={14} />
                   </span>
