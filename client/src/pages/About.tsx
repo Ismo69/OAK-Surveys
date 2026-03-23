@@ -274,26 +274,26 @@ export default function About() {
       </section>
 
       {/* Mission, Vision, Values */}
-      <section className="py-20 bg-[#0A1128] text-white">
+      <section className="py-20 bg-muted/50 border-t border-border">
         <div className="container mx-auto px-4 md:px-8">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
             {/* Vision & Mission */}
             <div className="space-y-12">
-              <div className="bg-white/5 p-10 border border-white/10 hover:bg-white/10 transition-colors">
+              <div className="bg-white p-10 shadow-sm border border-border hover:border-secondary transition-colors">
                 <div className="w-14 h-14 bg-secondary flex items-center justify-center mb-6 text-white rounded-sm">
                   <Eye size={28} />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-                <p className="text-gray-300 text-lg leading-relaxed">
+                <h3 className="text-2xl font-bold text-primary mb-4">Our Vision</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
                   To be the most trusted and technologically advanced geospatial consultancy in West Africa, setting the benchmark for precision in engineering and land development.
                 </p>
               </div>
-              <div className="bg-white/5 p-10 border border-white/10 hover:bg-white/10 transition-colors">
+              <div className="bg-white p-10 shadow-sm border border-border hover:border-secondary transition-colors">
                 <div className="w-14 h-14 bg-secondary flex items-center justify-center mb-6 text-white rounded-sm">
                   <Target size={28} />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-                <p className="text-gray-300 text-lg leading-relaxed">
+                <h3 className="text-2xl font-bold text-primary mb-4">Our Mission</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
                   To deliver accurate, reliable, and timely surveying and mapping solutions that empower our clients to build sustainable infrastructure and make informed spatial decisions.
                 </p>
               </div>
@@ -305,7 +305,7 @@ export default function About() {
                 <div className="w-8 h-[2px] bg-secondary"></div>
                 <span className="text-secondary font-bold uppercase tracking-wider text-sm">Core Values</span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-black mb-10">What Drives Us Forward</h2>
+              <h2 className="text-3xl md:text-4xl font-black text-primary mb-10">What Drives Us Forward</h2>
               
               <div className="space-y-8">
                 {[
@@ -328,13 +328,13 @@ export default function About() {
                 ].map((value, idx) => (
                   <div key={idx} className="flex gap-5">
                     <div className="mt-1">
-                      <div className="w-8 h-8 rounded-full bg-white/10 text-secondary flex items-center justify-center font-bold">
+                      <div className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
                         {idx + 1}
                       </div>
                     </div>
                     <div>
-                      <h4 className="text-xl font-bold mb-2">{value.title}</h4>
-                      <p className="text-gray-400">{value.desc}</p>
+                      <h4 className="text-xl font-bold text-primary mb-2">{value.title}</h4>
+                      <p className="text-muted-foreground">{value.desc}</p>
                     </div>
                   </div>
                 ))}
