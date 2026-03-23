@@ -31,7 +31,7 @@ export function Navbar() {
         </div>
         <div className="flex items-center gap-2">
           <Phone size={16} className="text-secondary" />
-          <span className="font-semibold">+2348036004494</span>
+          <span className="font-semibold">+234 803 600 4494</span>
         </div>
       </div>
 
