@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useMutation } from "@tanstack/react-query";
+import { PageSeo } from "@/components/PageSeo";
 
 async function submitSurveyRequest(data: {
   fullName: string;
@@ -72,6 +73,11 @@ export default function RequestSurvey() {
   }
 
   return (
+    <>
+      <PageSeo
+        title="Request a Survey | Oak Surveys Lagos, Nigeria"
+        description="Request a professional survey from Oak Surveys. Submit your project details and our team of expert surveyors in Lagos, Nigeria will get back to you promptly."
+      />
     <main className="flex-1 w-full overflow-hidden bg-muted/30">
       {/* Page Header */}
       <section className="bg-primary text-white py-16 relative overflow-hidden">
@@ -249,5 +255,6 @@ export default function RequestSurvey() {
         </div>
       </section>
     </main>
+    </>
   );
 }

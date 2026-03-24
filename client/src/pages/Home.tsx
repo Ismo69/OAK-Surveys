@@ -1,12 +1,20 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2, Shield, Map, Compass, Building2, BarChart, Phone } from "lucide-react";
+import { ArrowRight, CheckCircle2, Shield, Map, Compass, Building2, BarChart, Phone, ChevronDown } from "lucide-react";
+import { useState } from "react";
+import { PageSeo } from "@/components/PageSeo";
 import heroImage from "@/assets/images/hero-survey.jpg";
 import engineersImage from "@/assets/images/about-engineers.jpg";
 import projectImage from "@/assets/images/project-infrastructure.jpg";
 
 export default function Home() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
   return (
+    <>
+      <PageSeo
+        title="Oak Surveys – Professional Land & Engineering Surveying Services in Lagos, Nigeria Since 1974"
+        description="Oak Surveys is a professional surveying and geospatial services firm based in Lagos, Nigeria. Established in 1974, we provide land surveying, engineering surveys, hydrographic surveys, and mapping services."
+      />
     <main className="flex-1 w-full overflow-hidden">
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center">
@@ -14,7 +22,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <img 
             src={heroImage} 
-            alt="Surveyor using total station" 
+            alt="Professional surveyor using total station for land surveying in Lagos, Nigeria" 
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-[#001E60]/80 mix-blend-multiply"></div>
@@ -325,6 +333,63 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 md:px-8 max-w-4xl">
+          <div className="text-center mb-14">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <div className="w-8 h-[2px] bg-secondary"></div>
+              <span className="text-secondary font-bold uppercase tracking-wider text-sm">FAQs</span>
+              <div className="w-8 h-[2px] bg-secondary"></div>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-black text-primary">Frequently Asked Questions</h2>
+          </div>
+          <div className="space-y-4">
+            {[
+              {
+                q: "What surveying services does Oak Surveys provide?",
+                a: "Oak Surveys provides land surveying, engineering surveys, geodetic surveys, hydrographic surveys, and geo-information & mapping services. We cover the full spectrum of geospatial needs for construction, infrastructure, development, and marine projects across Nigeria."
+              },
+              {
+                q: "Where is Oak Surveys located?",
+                a: "Oak Surveys is based at No. 66 Eleshin Street, Obalende, Lagos, Nigeria. We operate throughout Lagos and provide surveying services across Nigeria for projects of all scales."
+              },
+              {
+                q: "How can I request a survey?",
+                a: "You can request a survey by visiting our Request a Survey page and filling out the project enquiry form. Alternatively, call us directly on +234 803 600 4494 or email info@oaksurveys.com.ng and our team will respond within 24–48 business hours."
+              },
+              {
+                q: "What types of projects does Oak Surveys handle?",
+                a: "We handle a wide range of projects including residential and commercial land title registrations, road and highway infrastructure surveys, oil & gas pipeline corridor surveys, waterway and port hydrographic surveys, urban GIS mapping, and large-scale geodetic control network establishment."
+              },
+              {
+                q: "How long has Oak Surveys been in operation?",
+                a: "Oak Surveys was established on March 1, 1974 — giving us over 50 years of professional surveying experience in Nigeria. We are registered members of the Nigerian Institution of Surveyors (NIS)."
+              }
+            ].map((faq, idx) => (
+              <div key={idx} className="border border-border">
+                <button
+                  onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
+                  className="w-full text-left flex justify-between items-center p-6 hover:bg-muted/50 transition-colors"
+                  data-testid={`faq-toggle-${idx}`}
+                >
+                  <span className="font-bold text-primary pr-4">{faq.q}</span>
+                  <ChevronDown
+                    size={20}
+                    className={`text-secondary shrink-0 transition-transform duration-200 ${openFaq === idx ? "rotate-180" : ""}`}
+                  />
+                </button>
+                {openFaq === idx && (
+                  <div className="px-6 pb-6 text-muted-foreground leading-relaxed border-t border-border pt-4">
+                    {faq.a}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Band */}
       <section className="bg-secondary py-16">
         <div className="container mx-auto px-4 md:px-8 text-center">
@@ -340,5 +405,6 @@ export default function Home() {
         </div>
       </section>
     </main>
+    </>
   );
 }

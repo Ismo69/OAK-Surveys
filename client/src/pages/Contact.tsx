@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useMutation } from "@tanstack/react-query";
+import { PageSeo } from "@/components/PageSeo";
 
 async function submitContactForm(data: {
   name: string;
@@ -56,6 +57,11 @@ export default function Contact() {
   }
 
   return (
+    <>
+      <PageSeo
+        title="Contact Oak Surveys | Professional Surveyors in Lagos, Nigeria"
+        description="Get in touch with Oak Surveys. Contact our team of professional surveyors in Lagos, Nigeria for land surveying, engineering surveys, and geospatial mapping enquiries."
+      />
     <main className="flex-1 w-full overflow-hidden">
       {/* Page Header */}
       <section className="bg-primary text-white py-20 relative overflow-hidden">
@@ -258,5 +264,6 @@ export default function Contact() {
         />
       </section>
     </main>
+    </>
   );
 }

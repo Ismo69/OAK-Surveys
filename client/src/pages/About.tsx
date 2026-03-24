@@ -1,10 +1,16 @@
 import { Shield, Target, Eye, Users, ChevronRight, GraduationCap, CheckCircle2, Quote } from "lucide-react";
+import { PageSeo } from "@/components/PageSeo";
 import historyImage from "@/assets/images/about-history-generated.png";
 import founderImage from "@assets/dad_pic_1773246913134.jpg";
 import leadershipImage from "@assets/uncle_k_pic_1773248943929.png";
 
 export default function About() {
   return (
+    <>
+      <PageSeo
+        title="About Oak Surveys | Established Surveying Firm in Lagos Since 1974"
+        description="Learn about Oak Surveys, a professional surveying company established in Lagos, Nigeria in 1974. Over 50 years of land surveying, engineering surveys, and geospatial expertise."
+      />
     <main className="flex-1 w-full overflow-hidden">
       {/* Page Header */}
       <section className="bg-primary text-white py-20 relative overflow-hidden">
@@ -53,7 +59,7 @@ export default function About() {
               <div className="absolute inset-0 bg-primary translate-x-6 translate-y-6 -z-10 hidden md:block"></div>
               <img 
                 src={historyImage} 
-                alt="Oak Surveys founding principles" 
+                alt="Oak Surveys historical office and professional surveying practice established in Lagos since 1974" 
                 className="w-full aspect-[4/5] object-cover border border-border shadow-xl"
               />
               <div className="absolute bottom-10 -left-10 bg-white p-6 shadow-2xl border border-gray-100 hidden md:block">
@@ -344,5 +350,6 @@ export default function About() {
         </div>
       </section>
     </main>
+    </>
   );
 }

@@ -1,0 +1,138 @@
+Improve the website for SEO, visibility, and discoverability on search engines.
+
+This is a professional surveying company website for Oak Surveys based in Lagos, Nigeria. The goal is to make the website more likely to appear on Google searches and attract potential clients.
+
+SEO STRUCTURE
+
+1. Add proper SEO metadata for every page:
+
+Homepage title:
+Oak Surveys – Professional Land & Engineering Surveying Services in Lagos, Nigeria Since 1974
+
+Homepage description:
+Oak Surveys is a professional surveying and geospatial services firm based in Lagos, Nigeria. Established in 1974, we provide land surveying, engineering surveys, hydrographic surveys, and mapping services.
+
+About page title:
+About Oak Surveys | Established Surveying Firm in Lagos Since 1974
+
+Services page title:
+Surveying Services in Lagos | Land, Engineering & Mapping | Oak Surveys
+
+Contact page title:
+Contact Oak Surveys | Professional Surveyors in Lagos, Nigeria
+
+Ensure all pages have unique and properly structured meta titles and descriptions.
+
+---
+
+2. Improve on-page SEO content:
+
+Ensure the following keywords appear naturally across the website:
+- surveying services in Lagos
+- land surveying Nigeria
+- engineering surveys
+- hydrographic surveys
+- geospatial mapping
+- surveying company Lagos Nigeria
+
+Do not keyword stuff. Keep it natural and professional.
+
+---
+
+3. Add a structured FAQ section:
+
+Add a section titled “Frequently Asked Questions” on the homepage or services page.
+
+Include questions such as:
+- What surveying services does Oak Surveys provide?
+- Where is Oak Surveys located?
+- How can I request a survey?
+- What types of projects do you handle?
+
+Provide clear, concise answers.
+
+---
+
+4. Improve image SEO:
+
+Ensure all images have descriptive alt text.
+
+Examples:
+- "Surveyor conducting land survey using GPS equipment in Lagos"
+- "Topographic mapping project by Oak Surveys in Nigeria"
+
+Avoid generic alt text like “image1”.
+
+---
+
+5. Add structured data (advanced but important):
+
+Implement basic schema markup for:
+- Organization (Oak Surveys)
+- Local business (location in Lagos, Nigeria)
+
+Include:
+- company name
+- address
+- phone number (if available)
+- website URL
+
+---
+
+6. Generate a sitemap:
+
+Create a sitemap.xml that includes:
+- homepage
+- about page
+- services page
+- contact page
+
+Ensure it is accessible at:
+oaksurveys.com/sitemap.xml
+
+---
+
+7. Improve internal linking:
+
+Ensure pages link to each other properly:
+- homepage links to services and contact
+- services page links to contact
+- about page links to services
+
+---
+
+8. Add strong location signals:
+
+Ensure Lagos, Nigeria appears clearly in:
+- homepage
+- contact page
+- footer
+
+Add full address in footer:
+No. 66 Eleshin Street, Obalende, Lagos, Nigeria
+
+---
+
+9. Improve performance:
+
+- optimize images for faster loading
+- ensure the site loads quickly
+- avoid unnecessary heavy elements
+
+---
+
+10. Final SEO polish:
+
+- ensure headings follow proper hierarchy (H1, H2, H3)
+- ensure content is readable and well structured
+- ensure no duplicate titles or descriptions
+
+FINAL GOAL
+
+The website should:
+- rank better on Google
+- clearly communicate location (Lagos, Nigeria)
+- attract potential clients searching for surveying services
+- look professional and credible
+
+Do not redesign the website. Focus on SEO, structure, and visibility improvements only.

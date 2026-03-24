@@ -1,6 +1,7 @@
 import { Map, Compass, Waves, Building2, BarChart, ArrowRight, Check } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import { PageSeo } from "@/components/PageSeo";
 import landImage from "@/assets/images/service-land-generated.png";
 import engineeringImage from "@/assets/images/service-engineering.jpg";
 import geodeticImage from "@/assets/images/service-geodetic.jpg";
@@ -16,7 +17,8 @@ export default function Services() {
       description: "Comprehensive land surveying services for property establishment, boundary disputes, and title registrations.",
       useCases: ["Boundary Demarcation", "Cadastral Mapping", "Subdivision Surveys", "Title Registrations"],
       benefits: "Secure legal boundaries and prevent costly land disputes before development begins.",
-      image: landImage
+      image: landImage,
+      imageAlt: "Land surveyor conducting boundary demarcation using GPS equipment in Lagos, Nigeria"
     },
     {
       id: "engineering-surveys",
@@ -25,7 +27,8 @@ export default function Services() {
       description: "High-precision surveying to support civil engineering, construction, and infrastructure projects from design to completion.",
       useCases: ["Setting Out / Layout", "As-Built Surveys", "Deformation Monitoring", "Earthwork Computations"],
       benefits: "Ensure structural elements are constructed exactly to design specifications, minimizing rework.",
-      image: engineeringImage
+      image: engineeringImage,
+      imageAlt: "Engineering survey team conducting infrastructure setting-out for a construction project in Nigeria"
     },
     {
       id: "geodetic-surveys",
@@ -34,7 +37,8 @@ export default function Services() {
       description: "Large-scale surveying that accounts for the curvature of the earth, establishing control networks for major projects.",
       useCases: ["Control Networks Establishment", "GPS/GNSS Surveys", "Datum Transformations"],
       benefits: "Provide a reliable, consistent coordinate framework for large-scale municipal or state infrastructure.",
-      image: geodeticImage
+      image: geodeticImage,
+      imageAlt: "Geodetic survey using GNSS equipment to establish control network in Nigeria"
     },
     {
       id: "hydrographic-surveys",
@@ -43,7 +47,8 @@ export default function Services() {
       description: "Mapping of underwater topography for marine engineering, dredging, and navigation purposes.",
       useCases: ["Bathymetric Mapping", "Dredging Support", "River Basin Mapping", "Coastal Development"],
       benefits: "Accurate underwater terrain models for safe navigation and effective marine construction.",
-      image: hydrographicImage
+      image: hydrographicImage,
+      imageAlt: "Hydrographic survey vessel conducting bathymetric mapping along Nigerian waterways"
     },
     {
       id: "geo-information",
@@ -52,11 +57,17 @@ export default function Services() {
       description: "Advanced spatial data collection, analysis, and visualization using modern GIS and remote sensing tools.",
       useCases: ["Topographic Mapping", "UAV/Drone Photogrammetry", "GIS Database Creation", "Spatial Analysis"],
       benefits: "Visualize complex spatial relationships to support urban planning, agriculture, and resource management.",
-      image: droneImage
+      image: droneImage,
+      imageAlt: "UAV drone conducting aerial photogrammetry for topographic mapping project in Lagos, Nigeria"
     }
   ];
 
   return (
+    <>
+      <PageSeo
+        title="Surveying Services in Lagos | Land, Engineering & Mapping | Oak Surveys"
+        description="Oak Surveys provides comprehensive surveying services in Lagos, Nigeria including land surveying, engineering surveys, hydrographic surveys, geodetic surveys, and geospatial mapping."
+      />
     <main className="flex-1 w-full overflow-hidden">
       {/* Page Header */}
       <section className="bg-primary text-white py-20 relative overflow-hidden">
@@ -112,7 +123,7 @@ export default function Services() {
                 {/* Visual Placeholder for Service */}
                 <div className="lg:w-1/2 w-full">
                   <div className="bg-muted aspect-video border border-border flex items-center justify-center relative overflow-hidden group">
-                     <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
+                     <img src={service.image} alt={service.imageAlt} className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
@@ -136,5 +147,6 @@ export default function Services() {
         </div>
       </section>
     </main>
+    </>
   );
 }
