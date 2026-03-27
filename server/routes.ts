@@ -6,7 +6,7 @@ import { insertContactEnquirySchema, insertSurveyRequestSchema } from "@shared/s
 import { ZodError } from "zod";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const NOTIFY_EMAIL = "info@oaksurveys.com.ng";
+const NOTIFY_EMAIL = "info@oaksurveys.com";
 const FROM_EMAIL = "notifications@oaksurveys.com";
 
 async function sendContactNotification(data: {
