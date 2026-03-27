@@ -55,14 +55,14 @@ export default function About() {
                  </div>
               </div>
             </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-primary translate-x-6 translate-y-6 -z-10 hidden md:block"></div>
+            <div className="relative hidden lg:block">
+              <div className="absolute inset-0 bg-primary translate-x-6 translate-y-6 -z-10"></div>
               <img 
                 src={historyImage} 
                 alt="Oak Surveys historical office and professional surveying practice established in Lagos since 1974" 
                 className="w-full aspect-[4/5] object-cover border border-border shadow-xl"
               />
-              <div className="absolute bottom-10 -left-10 bg-white p-6 shadow-2xl border border-gray-100 hidden md:block">
+              <div className="absolute bottom-10 -left-10 bg-white p-6 shadow-2xl border border-gray-100">
                 <div className="flex items-center gap-4">
                   <div className="text-5xl font-black text-secondary">50+</div>
                   <div className="font-bold text-primary leading-tight">Years of<br />Excellence</div>
