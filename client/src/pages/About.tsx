@@ -192,7 +192,7 @@ export default function About() {
                   </p>
 
                   <p>
-                    Beyond Oak Surveys, he serves as the Chairman of the Nigerian Institution of Surveyors (Lagos Chapter), reflecting his active dedication to advancing the profession, advocating for standard practices, and elevating industry benchmarks.
+                    Beyond Oak Surveys, he served two terms as Chairman of the Nigerian Institution of Surveyors (Lagos Chapter), reflecting his deep dedication to advancing the profession, advocating for standard practices, and elevating industry benchmarks.
                   </p>
                 </div>
 
