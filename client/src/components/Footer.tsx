@@ -18,12 +18,6 @@ export function Footer() {
             <p className="text-gray-400 text-sm leading-relaxed mb-6 pr-4">
               Professional land and engineering surveying practice established in 1974. Providing precise geospatial solutions for infrastructure and development across Nigeria.
             </p>
-            <div className="flex gap-4">
-              {/* Social placeholders */}
-              <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors cursor-pointer text-sm">In</div>
-              <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors cursor-pointer text-sm">Tw</div>
-              <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors cursor-pointer text-sm">Fb</div>
-            </div>
           </div>
 
           {/* Quick Links */}
