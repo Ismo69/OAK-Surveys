@@ -223,6 +223,12 @@ export default function About() {
             <div className="space-y-6">
               {[
                 {
+                  title: "Drone Mapping of Osita Island, Near Freedom Way, Lekki, Lagos State",
+                  desc: "Full drone mapping of the entire island showing boundaries as they exist. Aerial photogrammetry and geospatial data capture to produce accurate boundary and terrain documentation.",
+                  client: "Promoters of Osita Island",
+                  duration: "Project specific duration"
+                },
+                {
                   title: "Cadastral Survey & Boundary Establishment of Royal Estate, Ajah, Lagos State",
                   desc: "Boundary and individual plot beaconing with GPS-based control surveys to support the demarcation and documentation of the estate for land title preparation.",
                   client: "Trojan Estates, Lekki, Lagos",
