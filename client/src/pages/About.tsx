@@ -2,7 +2,7 @@ import { Shield, Target, Eye, Users, ChevronRight, GraduationCap, CheckCircle2, 
 import { PageSeo } from "@/components/PageSeo";
 import historyImage from "@/assets/images/about-history-generated.png";
 import founderImage from "@assets/dad_pic_1773246913134.jpg";
-import leadershipImage from "@assets/uncle_k_pic_1773248943929.png";
+import leadershipImage from "@assets/kolade_kasim_portrait.jpg";
 
 export default function About() {
   return (
