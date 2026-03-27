@@ -97,15 +97,28 @@ export default function Home() {
       {/* Mobile Credibility Stats */}
       <section className="bg-white py-12 border-b border-gray-100 lg:hidden">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-             <div className="flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center text-primary mb-3">
-                <Shield size={28} />
+          <div className="grid grid-cols-3 gap-4">
+            <div className="flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center text-primary mb-3">
+                <Shield size={22} />
               </div>
-              <h4 className="font-bold text-primary text-2xl mb-1">50+ Years</h4>
-              <p className="text-sm text-muted-foreground">Of Experience</p>
+              <h4 className="font-bold text-primary text-lg mb-1">50+ Years</h4>
+              <p className="text-xs text-muted-foreground">Of Experience</p>
             </div>
-            {/* Add others similarly if needed for mobile */}
+            <div className="flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center text-primary mb-3">
+                <Compass size={22} />
+              </div>
+              <h4 className="font-bold text-primary text-lg mb-1">Precision</h4>
+              <p className="text-xs text-muted-foreground">Geospatial Data</p>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center text-primary mb-3">
+                <Building2 size={22} />
+              </div>
+              <h4 className="font-bold text-primary text-lg mb-1">Trusted By</h4>
+              <p className="text-xs text-muted-foreground">Firms & Agencies</p>
+            </div>
           </div>
         </div>
       </section>
