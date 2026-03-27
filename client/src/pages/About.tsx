@@ -223,6 +223,12 @@ export default function About() {
             <div className="space-y-6">
               {[
                 {
+                  title: "Topographical & Detail Survey of Ikoyi Club 1938, Ikoyi, Lagos State",
+                  desc: "Comprehensive large-scale mapping of the entire club area carried out to aid future planning and re-development. Delivered detailed topographic and geospatial data across the full extent of the club grounds.",
+                  client: "Ikoyi Club 1938",
+                  duration: "5 months"
+                },
+                {
                   title: "Mapping of Kaduna–Karaduwa River Basin at Ruma",
                   desc: "Reservoir boundary demarcation, flood-level referencing, and geospatial mapping carried out to support water resource planning and land-use management.",
                   client: "Department of Water Resources, Ruma State",
