@@ -223,6 +223,12 @@ export default function About() {
             <div className="space-y-6">
               {[
                 {
+                  title: "Cadastral Survey & Boundary Establishment of Royal Estate, Ajah, Lagos State",
+                  desc: "Boundary and individual plot beaconing with GPS-based control surveys to support the demarcation and documentation of the estate for land title preparation.",
+                  client: "Trojan Estates, Lekki, Lagos",
+                  duration: "Ongoing"
+                },
+                {
                   title: "Topographical & Detail Survey of Ikoyi Club 1938, Ikoyi, Lagos State",
                   desc: "Comprehensive large-scale mapping of the entire club area carried out to aid future planning and re-development. Delivered detailed topographic and geospatial data across the full extent of the club grounds.",
                   client: "Ikoyi Club 1938",
