@@ -243,16 +243,16 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Mapping of Kaduna–Karaduwa River Basin",
-                desc: "Comprehensive basin mapping and boundary demarcation to support water resource planning, land management, and geospatial decision-making."
+                title: "Drone Mapping of Osita Island, Lekki, Lagos State",
+                desc: "Full drone mapping of the entire island using aerial photogrammetry to produce accurate boundary and terrain documentation for the island's promoters."
               },
               {
-                title: "Establishment of Federal Capital Territory Boundary",
-                desc: "Boundary beaconing and geodetic control work supporting the accurate demarcation of the Federal Capital Territory boundary."
+                title: "Cadastral Survey & Boundary Establishment of Royal Estate, Ajah",
+                desc: "Plot beaconing and GPS-based control surveys supporting the demarcation and documentation of the estate for land title preparation. Client: Trojan Estates, Lekki."
               },
               {
-                title: "Topographic Mapping for LSDPC, Ogudu Phase II",
-                desc: "Topographic mapping and GIS-ready terrain data prepared to support urban planning and development in Ogudu Phase II."
+                title: "Topographical & Detail Survey of Ikoyi Club 1938, Lagos",
+                desc: "Comprehensive large-scale mapping of the entire club grounds to aid future planning and re-development of one of Lagos's most historic institutions."
               }
             ].map((project, idx) => (
               <div key={idx} className="bg-muted p-8 border-t-4 border-secondary hover:shadow-xl transition-all duration-300">

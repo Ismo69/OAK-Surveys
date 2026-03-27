@@ -241,28 +241,10 @@ export default function About() {
                   duration: "5 months"
                 },
                 {
-                  title: "Mapping of Kaduna–Karaduwa River Basin at Ruma",
-                  desc: "Reservoir boundary demarcation, flood-level referencing, and geospatial mapping carried out to support water resource planning and land-use management.",
-                  client: "Department of Water Resources, Ruma State",
-                  duration: "6 months"
-                },
-                {
                   title: "Establishment of Federal Capital Territory Boundary",
                   desc: "Boundary beaconing and GPS-based control surveys executed to support the official demarcation and documentation of the Federal Capital Territory boundary.",
                   client: "Federal Capital Development Authority (FCDA)",
                   duration: "12 months"
-                },
-                {
-                  title: "Large Scale Mapping of Local Government Headquarters",
-                  desc: "Comprehensive large-scale mapping across selected local government headquarters in Borno and Niger States to support planning, infrastructure development, and administration.",
-                  client: "Relevant local government authorities in Borno State and Niger State",
-                  duration: "Several months"
-                },
-                {
-                  title: "Electricity Transmission Line Route Surveying – 45 km, Akwa Ibom State",
-                  desc: "Route surveying carried out from Ikot-Abasi to Eket to provide accurate spatial data for transmission line planning and engineering coordination.",
-                  client: "Undisclosed Client",
-                  duration: "Project specific duration"
                 },
                 {
                   title: "Topographic Mapping for LSDPC, Ogudu Phase II",
