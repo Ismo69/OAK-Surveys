@@ -20,6 +20,7 @@ async function sendContactNotification(data: {
     await resend.emails.send({
       from: FROM_EMAIL,
       to: NOTIFY_EMAIL,
+      replyTo: data.email,
       subject: `New Contact Enquiry: ${data.subject || "General Enquiry"} — Oak Surveys Website`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -72,6 +73,7 @@ async function sendSurveyRequestNotification(data: {
     await resend.emails.send({
       from: FROM_EMAIL,
       to: NOTIFY_EMAIL,
+      replyTo: data.email,
       subject: `New Survey Request: ${surveyTypeLabels[data.surveyType] || data.surveyType} — ${data.fullName}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
