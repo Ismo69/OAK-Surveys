@@ -369,7 +369,7 @@ export default function Home() {
               },
               {
                 q: "How can I request a survey?",
-                a: "You can request a survey by visiting our Request a Survey page and filling out the project enquiry form. Alternatively, call us directly on +234 803 600 4494 or email info@oaksurveys.com.ng and our team will respond within 24–48 business hours."
+                a: "You can request a survey by visiting our Request a Survey page and filling out the project enquiry form. Alternatively, call us directly on +234 803 600 4494 or email info@oaksurveys.com and our team will respond within 24–48 business hours."
               },
               {
                 q: "What types of projects does Oak Surveys handle?",

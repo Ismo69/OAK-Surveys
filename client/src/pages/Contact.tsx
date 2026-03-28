@@ -123,7 +123,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-primary text-base mb-1">Email Us</h4>
-                    <p className="text-muted-foreground">info@oaksurveys.com.ng</p>
+                    <p className="text-muted-foreground">info@oaksurveys.com</p>
                     <p className="text-sm text-muted-foreground mt-1">Expect a reply within 24 hours</p>
                   </div>
                 </div>

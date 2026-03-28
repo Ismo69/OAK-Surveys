@@ -26,7 +26,7 @@ export function Navbar() {
           </div>
           <div className="flex items-center gap-2">
             <Mail size={16} className="text-secondary" />
-            <span>info@oaksurveys.com.ng</span>
+            <span>info@oaksurveys.com</span>
           </div>
         </div>
         <div className="flex items-center gap-2">
