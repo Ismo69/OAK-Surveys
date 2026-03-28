@@ -108,7 +108,7 @@ export default function About() {
                       Surv. (Alh.) Olatunde Al-Ghali Kasim, FNIS
                     </h3>
                     <p className="text-secondary font-medium tracking-wide">
-                      16 January 1940 – 28 February 2018
+                      16 November 1940 – 28 February 2018
                     </p>
                   </div>
                 </div>
