@@ -9,11 +9,13 @@ import NotFound from "@/pages/not-found";
 
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Contact from "@/pages/Contact";
 import RequestSurvey from "@/pages/RequestSurvey";
+import ThankYou from "@/pages/ThankYou";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -45,6 +47,7 @@ function Router() {
         <Route path="/services" component={Services} />
         <Route path="/contact" component={Contact} />
         <Route path="/request-survey" component={RequestSurvey} />
+        <Route path="/thank-you" component={ThankYou} />
         <Route component={NotFound} />
       </Switch>
     </>
@@ -60,6 +63,7 @@ function App() {
           <Navbar />
           <Router />
           <Footer />
+          <WhatsAppButton />
         </div>
         <Toaster />
       </TooltipProvider>

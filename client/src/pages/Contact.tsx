@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "wouter";
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -26,6 +27,7 @@ async function submitContactForm(data: {
 }
 
 export default function Contact() {
+  const [, navigate] = useLocation();
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -37,7 +39,7 @@ export default function Contact() {
   const mutation = useMutation({
     mutationFn: submitContactForm,
     onSuccess: () => {
-      setForm({ name: "", email: "", phone: "", subject: "", message: "" });
+      navigate("/thank-you");
     },
   });
 

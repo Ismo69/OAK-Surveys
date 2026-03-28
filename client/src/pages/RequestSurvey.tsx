@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "wouter";
 import { Send, CheckCircle2, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -28,6 +29,7 @@ async function submitSurveyRequest(data: {
 }
 
 export default function RequestSurvey() {
+  const [, navigate] = useLocation();
   const [form, setForm] = useState({
     fullName: "",
     company: "",
@@ -41,15 +43,7 @@ export default function RequestSurvey() {
   const mutation = useMutation({
     mutationFn: submitSurveyRequest,
     onSuccess: () => {
-      setForm({
-        fullName: "",
-        company: "",
-        email: "",
-        phone: "",
-        projectLocation: "",
-        surveyType: "",
-        description: "",
-      });
+      navigate("/thank-you");
     },
   });
 
