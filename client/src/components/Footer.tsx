@@ -98,6 +98,19 @@ export function Footer() {
             Registered Surveyor Practice Since 1974
           </p>
         </div>
+        <div className="mt-6 pt-4 border-t border-white/5 text-center">
+          <p className="text-gray-600 text-xs">
+            Powered by{" "}
+            <a
+              href="https://koi-website.replit.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-secondary transition-colors"
+            >
+              KOI AI Solutions
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
