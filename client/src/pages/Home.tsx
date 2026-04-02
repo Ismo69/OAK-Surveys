@@ -37,7 +37,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-6 animate-in slide-in-from-bottom-8 duration-700 delay-150">
               Trusted Surveying <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
-                Expertise Since 1974
+                Built on Precision
               </span>
             </h1>
             <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl leading-relaxed animate-in slide-in-from-bottom-8 duration-700 delay-300">
@@ -135,10 +135,6 @@ export default function Home() {
                 alt="Engineers reviewing plans" 
                 className="w-full aspect-[4/3] object-cover shadow-2xl relative z-0"
               />
-              <div className="absolute bottom-6 -right-8 lg:-right-12 bg-primary text-white p-6 shadow-xl max-w-xs border-l-4 border-secondary hidden md:block z-10">
-                <p className="font-bold text-2xl mb-1">Since 1974</p>
-                <p className="text-sm text-white/80">Registered Professional Practice</p>
-              </div>
             </div>
             <div>
               <div className="flex items-center gap-2 mb-4">
