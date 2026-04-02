@@ -73,7 +73,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Honoring the Legacy of Our Founder */}
+      {/* Honouring the Legacy of Our Founder */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 md:px-8">
           <div className="max-w-6xl mx-auto">
@@ -100,7 +100,7 @@ export default function About() {
               <div className="w-full md:w-7/12 lg:w-3/5">
                 <div className="mb-10">
                   <h2 className="text-3xl font-heading font-black text-primary uppercase tracking-wide mb-8">
-                    Honoring the Legacy of Our Founder
+                    Honouring the Legacy of Our Founder
                   </h2>
                   
                   <div className="mb-8 pb-8 border-b border-gray-100">
@@ -131,7 +131,7 @@ export default function About() {
                   </p>
 
                   <p className="font-medium text-primary italic pt-4">
-                    We honor his memory with deep respect and gratitude.
+                    We honour his memory with deep respect and gratitude.
                   </p>
                 </div>
               </div>
