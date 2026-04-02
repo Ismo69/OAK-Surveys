@@ -256,7 +256,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Drone Mapping of Osita Island, Lekki, Lagos State",
+                title: "Drone Mapping of Ostia Island, Lekki, Lagos State",
                 desc: "Full drone mapping of the entire island using aerial photogrammetry to produce accurate boundary and terrain documentation for the island's promoters."
               },
               {
