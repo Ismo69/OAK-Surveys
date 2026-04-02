@@ -1,0 +1,38 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "YyZGB0i7DAeZdD-QCJ_bt"
+uri = "file://attached_assets/stock_images/surveyor_fieldwork_hero_1.jpg"
+type = "image"
+title = "professional land surveyor using total station theodolite equipment on construction site outdoors"
+
+[[outputs]]
+id = "F0tX0hZpqf9YZ1nHjq-tf"
+uri = "file://attached_assets/stock_images/surveyor_fieldwork_hero_2.jpg"
+type = "image"
+title = "professional land surveyor using total station theodolite equipment on construction site outdoors"
+
+[[outputs]]
+id = "emITDQ2p8wbRnuBT6-Y0Y"
+uri = "file://attached_assets/stock_images/surveyor_fieldwork_hero_3.jpg"
+type = "image"
+title = "professional land surveyor using total station theodolite equipment on construction site outdoors"
+
+[[outputs]]
+id = "NN5mVf4zABiwP8kNk3gq8"
+uri = "file://attached_assets/stock_images/surveyor_instrument_field_1.jpg"
+type = "image"
+title = "surveyor with theodolite total station GPS on tripod measuring land outdoor field"
+
+[[outputs]]
+id = "TMiccBIY0TzbDk9PWQo2o"
+uri = "file://attached_assets/stock_images/surveyor_instrument_field_2.jpg"
+type = "image"
+title = "surveyor with theodolite total station GPS on tripod measuring land outdoor field"
+
+[[outputs]]
+id = "7WvsLswakAwTBJ28RsXby"
+uri = "file://attached_assets/stock_images/surveyor_instrument_field_3.jpg"
+type = "image"
+title = "surveyor with theodolite total station GPS on tripod measuring land outdoor field"

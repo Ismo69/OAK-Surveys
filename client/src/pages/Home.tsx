@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, Shield, Map, Compass, Building2, BarChart, Phone, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { PageSeo } from "@/components/PageSeo";
-import heroImage from "@/assets/images/hero-survey.jpg";
+import heroImage from "@/assets/images/hero-survey-new.jpg";
 import engineersImage from "@/assets/images/about-engineers.jpg";
 import projectImage from "@/assets/images/project-infrastructure.jpg";
 
