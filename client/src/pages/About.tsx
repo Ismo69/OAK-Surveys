@@ -226,7 +226,7 @@ export default function About() {
                   title: "Drone Mapping of Ostia Island, Near Freedom Way, Lekki, Lagos State",
                   desc: "Full drone mapping of the entire island showing boundaries as they exist. Aerial photogrammetry and geospatial data capture to produce accurate boundary and terrain documentation.",
                   client: "Promoters of Ostia Island",
-                  duration: "Project specific duration"
+                  duration: "Ongoing"
                 },
                 {
                   title: "Cadastral Survey & Boundary Establishment of Royal Gardens Estate, Ajah, Lagos State",
