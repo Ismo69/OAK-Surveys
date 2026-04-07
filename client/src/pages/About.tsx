@@ -229,7 +229,7 @@ export default function About() {
                   duration: "Project specific duration"
                 },
                 {
-                  title: "Cadastral Survey & Boundary Establishment of Royal Estate, Ajah, Lagos State",
+                  title: "Cadastral Survey & Boundary Establishment of Royal Gardens Estate, Ajah, Lagos State",
                   desc: "Boundary and individual plot beaconing with GPS-based control surveys to support the demarcation and documentation of the estate for land title preparation.",
                   client: "Trojan Estates, Lekki, Lagos",
                   duration: "Ongoing"

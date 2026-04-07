@@ -256,7 +256,7 @@ export default function Home() {
                 desc: "Full drone mapping of the entire island using aerial photogrammetry to produce accurate boundary and terrain documentation for the island's promoters."
               },
               {
-                title: "Cadastral Survey & Boundary Establishment of Royal Estate, Ajah",
+                title: "Cadastral Survey & Boundary Establishment of Royal Gardens Estate, Ajah",
                 desc: "Plot beaconing and GPS-based control surveys supporting the demarcation and documentation of the estate for land title preparation. Client: Trojan Estates, Lekki."
               },
               {
