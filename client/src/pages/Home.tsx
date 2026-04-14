@@ -361,7 +361,7 @@ export default function Home() {
               },
               {
                 q: "Where are we located?",
-                a: "We are based at No. 66 Eleshin Street, Obalende, Lagos, Nigeria. We operate throughout Lagos and provide surveying services across Nigeria for projects of all scales."
+                a: "We are based at No. 66 Eleshin Street, Obalende, Lagos, Nigeria. We provide surveying services throughout Nigeria for projects of all sizes."
               },
               {
                 q: "How can I request a survey?",
