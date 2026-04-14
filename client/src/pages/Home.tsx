@@ -41,7 +41,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl leading-relaxed animate-in slide-in-from-bottom-8 duration-700 delay-300">
-              Professional land and engineering surveying practice providing precise geospatial solutions for infrastructure, construction, and development projects across Nigeria.
+              Providing accurate, dependable land and engineering surveying services to power infrastructure, construction, and development projects across Nigeria.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-in slide-in-from-bottom-8 duration-700 delay-500">
               <Link href="/request-survey">
