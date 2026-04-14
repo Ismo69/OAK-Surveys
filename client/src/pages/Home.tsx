@@ -371,10 +371,6 @@ export default function Home() {
                 q: "What types of projects do we handle?",
                 a: "We handle a wide range of projects including residential and commercial land title registrations, road and highway infrastructure surveys, oil & gas pipeline corridor surveys, waterway and port hydrographic surveys, urban GIS mapping, and large-scale geodetic control network establishment."
               },
-              {
-                q: "How long have we been in operation?",
-                a: "We were established on March 1, 1974 — giving us over 50 years of professional surveying experience in Nigeria. We are registered members of the Nigerian Institution of Surveyors (NIS)."
-              }
             ].map((faq, idx) => (
               <div key={idx} className="border border-border">
                 <button
