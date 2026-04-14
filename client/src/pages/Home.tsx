@@ -365,7 +365,7 @@ export default function Home() {
               },
               {
                 q: "How can I request a survey?",
-                a: "You can request a survey by visiting our Request a Survey page and filling out the project enquiry form. Alternatively, call us directly on +234 803 600 4494 or email info@oaksurveys.com and our team will respond within 24–48 business hours."
+                a: "You can request a survey here. Alternatively, call us directly on +234 803 600 4494 or email info@oaksurveys.com and our team will respond within 24–48 business hours."
               },
               {
                 q: "What types of projects do we handle?",
@@ -389,8 +389,18 @@ export default function Home() {
                   />
                 </button>
                 {openFaq === idx && (
-                  <div className="px-6 pb-6 text-muted-foreground leading-relaxed border-t border-border pt-4">
-                    {faq.a}
+                <div className="px-6 pb-6 text-muted-foreground leading-relaxed border-t border-border pt-4">
+                    {idx === 2 ? (
+                      <>
+                        You can request a survey{" "}
+                        <Link href="/request-survey" className="text-primary font-semibold underline" data-testid="link-request-survey">
+                          here
+                        </Link>
+                        . Alternatively, call us directly on +234 803 600 4494 or email info@oaksurveys.com and our team will respond within 24–48 business hours.
+                      </>
+                    ) : (
+                      faq.a
+                    )}
                   </div>
                 )}
               </div>
