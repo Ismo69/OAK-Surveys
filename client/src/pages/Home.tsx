@@ -356,24 +356,24 @@ export default function Home() {
           <div className="space-y-4">
             {[
               {
-                q: "What surveying services does Oak Surveys provide?",
-                a: "Oak Surveys provides land surveying, engineering surveys, geodetic surveys, hydrographic surveys, and geo-information & mapping services. We cover the full spectrum of geospatial needs for construction, infrastructure, development, and marine projects across Nigeria."
+                q: "What services do we provide?",
+                a: "We provide land surveying, engineering surveys, geodetic surveys, hydrographic surveys, and geo-information & mapping services. We cover the full spectrum of geospatial needs for construction, infrastructure, development, and marine projects across Nigeria."
               },
               {
-                q: "Where is Oak Surveys located?",
-                a: "Oak Surveys is based at No. 66 Eleshin Street, Obalende, Lagos, Nigeria. We operate throughout Lagos and provide surveying services across Nigeria for projects of all scales."
+                q: "Where are we located?",
+                a: "We are based at No. 66 Eleshin Street, Obalende, Lagos, Nigeria. We operate throughout Lagos and provide surveying services across Nigeria for projects of all scales."
               },
               {
                 q: "How can I request a survey?",
                 a: "You can request a survey by visiting our Request a Survey page and filling out the project enquiry form. Alternatively, call us directly on +234 803 600 4494 or email info@oaksurveys.com and our team will respond within 24–48 business hours."
               },
               {
-                q: "What types of projects does Oak Surveys handle?",
+                q: "What types of projects do we handle?",
                 a: "We handle a wide range of projects including residential and commercial land title registrations, road and highway infrastructure surveys, oil & gas pipeline corridor surveys, waterway and port hydrographic surveys, urban GIS mapping, and large-scale geodetic control network establishment."
               },
               {
-                q: "How long has Oak Surveys been in operation?",
-                a: "Oak Surveys was established on March 1, 1974 — giving us over 50 years of professional surveying experience in Nigeria. We are registered members of the Nigerian Institution of Surveyors (NIS)."
+                q: "How long have we been in operation?",
+                a: "We were established on March 1, 1974 — giving us over 50 years of professional surveying experience in Nigeria. We are registered members of the Nigerian Institution of Surveyors (NIS)."
               }
             ].map((faq, idx) => (
               <div key={idx} className="border border-border">
