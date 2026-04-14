@@ -145,7 +145,7 @@ export default function Home() {
                 A Legacy of Precision & Reliability
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Established on March 1, 1974, Oak Surveys is a premier surveying and geospatial consultancy based in Lagos. For over five decades, we have provided critical spatial data to power Nigeria's engineering, construction, and development sectors.
+                Established on March 1, 1974, Oak Surveys is a premier surveying and geospatial consultancy based in Lagos. For over five decades, we have provided critical spatial data to power Nigeria's engineering, construction, and infrastructure development.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 As proud members of the Nigerian Institution of Surveyors, we maintain the highest ethical standards and employ modern methodologies to deliver data you can build upon with complete confidence.
