@@ -48,7 +48,7 @@ export default function About() {
 
               <div className="mt-10 bg-muted p-8 border-l-4 border-secondary flex items-start gap-6">
                  <a href="https://nisngr.net/" target="_blank" rel="noreferrer" data-testid="link-nis-website">
-                   <img src={nisLogo} alt="Nigerian Institution of Surveyors logo" className="w-24 h-24 object-contain shrink-0" />
+                   <img src={nisLogo} alt="Nigerian Institution of Surveyors logo" className="w-32 h-32 object-contain shrink-0" />
                  </a>
                  <div>
                    <h4 className="text-xl font-bold text-primary mb-2">Nigerian Institution of Surveyors</h4>
