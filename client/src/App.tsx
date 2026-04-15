@@ -13,6 +13,7 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Services from "@/pages/Services";
+import Projects from "@/pages/Projects";
 import Contact from "@/pages/Contact";
 import RequestSurvey from "@/pages/RequestSurvey";
 import ThankYou from "@/pages/ThankYou";
@@ -45,6 +46,7 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/services" component={Services} />
+        <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
         <Route path="/request-survey" component={RequestSurvey} />
         <Route path="/thank-you" component={ThankYou} />
