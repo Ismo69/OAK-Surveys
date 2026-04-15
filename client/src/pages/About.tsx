@@ -51,7 +51,9 @@ export default function About() {
                    <img src={nisLogo} alt="Nigerian Institution of Surveyors logo" className="w-32 h-32 object-contain shrink-0" />
                  </a>
                  <div>
-                   <h4 className="text-xl font-bold text-primary mb-2">Nigerian Institution of Surveyors</h4>
+                   <a href="https://nisngr.net/" target="_blank" rel="noreferrer" className="inline-block text-xl font-bold text-primary mb-2" data-testid="link-nis-text">
+                     Nigerian Institution of Surveyors
+                   </a>
                    <p className="text-muted-foreground">
                      We are proud and active members of the NIS, adhering strictly to its code of ethics and professional conduct standards.
                    </p>
