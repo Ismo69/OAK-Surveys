@@ -3,6 +3,7 @@ import { PageSeo } from "@/components/PageSeo";
 import historyImage from "@/assets/images/about-history-generated.png";
 import founderImage from "@assets/dad_pic_1773246913134.jpg";
 import leadershipImage from "@assets/kolade_kasim_portrait.jpg";
+import nisLogo from "@assets/nis_logo_whitebg-removebg-preview_1776247984208.png";
 
 export default function About() {
   return (
@@ -46,7 +47,9 @@ export default function About() {
               </div>
 
               <div className="mt-10 bg-muted p-8 border-l-4 border-secondary flex items-start gap-6">
-                 <GraduationCap className="text-primary shrink-0 w-12 h-12" />
+                 <a href="https://nisngr.net/" target="_blank" rel="noreferrer" data-testid="link-nis-website">
+                   <img src={nisLogo} alt="Nigerian Institution of Surveyors logo" className="w-12 h-12 object-contain shrink-0" />
+                 </a>
                  <div>
                    <h4 className="text-xl font-bold text-primary mb-2">Nigerian Institution of Surveyors</h4>
                    <p className="text-muted-foreground">
