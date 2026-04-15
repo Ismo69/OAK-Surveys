@@ -124,7 +124,11 @@ export default function About() {
                   </p>
                   
                   <p>
-                    Throughout his career, he played an influential role within the Nigerian Institution of Surveyors, where his leadership helped drive important initiatives for the profession. His tenure was marked by significant milestones, including key institutional developments such as the acquisition of the Surveyors Tower in Lagos. His contributions also extended to national institutions, including the National Boundary Commission and the National Space Programme, where his expertise supported important national initiatives.
+                    Throughout his career, he played an influential role within the Nigerian Institution of Surveyors, serving twice as President. His leadership was strengthened by his fluency in the three major Nigerian languages — Igbo, Hausa, and Yoruba — which enabled him to connect across communities and represent the profession with exceptional reach and trust.
+                  </p>
+
+                  <p>
+                    He was also deeply committed to continuous professional development, regularly attending international conferences to stay current with emerging technologies and global best practices in surveying and geospatial development. His contributions also extended to national institutions, including the National Boundary Commission and the National Space Programme, where his expertise supported important national initiatives.
                   </p>
 
                   <p>
