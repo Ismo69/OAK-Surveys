@@ -1,5 +1,5 @@
 import { PageSeo } from "@/components/PageSeo";
-import { MapPin, Clock, Building2, ArrowRight } from "lucide-react";
+import { Clock, Building2, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
@@ -59,12 +59,10 @@ export default function Projects() {
         description="Explore Oak Surveys' portfolio of notable land, engineering, and geodetic surveying projects across Nigeria, including work for government agencies, estate developers, and major institutions."
       />
       <main className="flex-1 w-full overflow-hidden">
-
-        {/* Page Header */}
-        <section className="bg-primary text-white py-10 relative overflow-hidden">
+        <section className="bg-primary text-white py-8 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary/10 -skew-x-12 translate-x-32 transform z-0"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full -translate-x-32 translate-y-16 z-0"></div>
-          <div className="container mx-auto px-4 md:px-8 relative z-10">
+          <div className="container mx-auto px-4 md:px-8 pt-2 relative z-10">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-[2px] bg-secondary"></div>
               <span className="text-secondary font-bold uppercase tracking-wider text-sm">Our Work</span>
@@ -76,7 +74,6 @@ export default function Projects() {
           </div>
         </section>
 
-        {/* Stats Bar */}
         <section className="bg-secondary text-white py-8">
           <div className="container mx-auto px-4 md:px-8">
             <div className="grid grid-cols-3 divide-x divide-white/20 text-center">
@@ -96,86 +93,62 @@ export default function Projects() {
           </div>
         </section>
 
-        {/* Projects List */}
         <section className="py-24 bg-white">
           <div className="container mx-auto px-4 md:px-8">
-            <div className="max-w-6xl mx-auto">
-
-              <div className="space-y-8">
-                {projects.map((project, idx) => (
-                  <div
-                    key={idx}
-                    data-testid={`project-card-${idx}`}
-                    className={`group border border-border hover:border-secondary transition-all duration-300 ${project.highlight ? "bg-primary text-white" : "bg-muted"}`}
-                  >
-                    <div className="p-8 md:p-10">
-                      {/* Category Tag */}
-                      <div className="mb-4">
-                        <span className={`text-xs font-bold uppercase tracking-widest px-3 py-1 ${project.highlight ? "bg-secondary text-white" : "bg-secondary/10 text-secondary"}`}>
-                          {project.category}
-                        </span>
+            <div className="max-w-6xl mx-auto space-y-8">
+              {projects.map((project, idx) => (
+                <div key={idx} data-testid={`project-card-${idx}`} className={`group border border-border hover:border-secondary transition-all duration-300 ${project.highlight ? "bg-primary text-white" : "bg-muted"}`}>
+                  <div className="p-8 md:p-10">
+                    <div className="mb-4">
+                      <span className={`text-xs font-bold uppercase tracking-widest px-3 py-1 ${project.highlight ? "bg-secondary text-white" : "bg-secondary/10 text-secondary"}`}>
+                        {project.category}
+                      </span>
+                    </div>
+                    <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
+                      <div className="md:w-3/4">
+                        <h3 className={`text-xl md:text-2xl font-bold mb-1 leading-snug ${project.highlight ? "text-white" : "text-primary"}`}>
+                          {project.title}
+                        </h3>
+                        <p className="text-sm font-medium mb-4 text-secondary">{project.subtitle}</p>
+                        <p className={`text-base leading-relaxed ${project.highlight ? "text-gray-300" : "text-muted-foreground"}`}>
+                          {project.desc}
+                        </p>
                       </div>
-
-                      <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
-                        <div className="md:w-3/4">
-                          <h3 className={`text-xl md:text-2xl font-bold mb-1 leading-snug ${project.highlight ? "text-white" : "text-primary"}`}>
-                            {project.title}
-                          </h3>
-                          <p className={`text-sm font-medium mb-4 ${project.highlight ? "text-secondary" : "text-secondary"}`}>
-                            {project.subtitle}
-                          </p>
-                          <p className={`text-base leading-relaxed ${project.highlight ? "text-gray-300" : "text-muted-foreground"}`}>
-                            {project.desc}
-                          </p>
+                      <div className={`md:w-1/4 md:text-right shrink-0 border-t md:border-t-0 md:border-l pt-4 md:pt-0 md:pl-6 space-y-4 ${project.highlight ? "border-white/20" : "border-gray-200"}`}>
+                        <div>
+                          <span className={`block text-xs uppercase tracking-wider font-semibold mb-1 ${project.highlight ? "text-gray-400" : "text-muted-foreground"}`}>Client</span>
+                          <span className={`text-sm font-medium flex items-center gap-1 md:justify-end ${project.highlight ? "text-gray-200" : "text-primary"}`}>
+                            <Building2 size={13} className="shrink-0" />
+                            {project.client}
+                          </span>
                         </div>
-
-                        {/* Meta */}
-                        <div className={`md:w-1/4 md:text-right shrink-0 border-t md:border-t-0 md:border-l pt-4 md:pt-0 md:pl-6 space-y-4 ${project.highlight ? "border-white/20" : "border-gray-200"}`}>
-                          <div>
-                            <span className={`block text-xs uppercase tracking-wider font-semibold mb-1 ${project.highlight ? "text-gray-400" : "text-muted-foreground"}`}>
-                              Client
-                            </span>
-                            <span className={`text-sm font-medium flex items-center gap-1 md:justify-end ${project.highlight ? "text-gray-200" : "text-primary"}`}>
-                              <Building2 size={13} className="shrink-0" />
-                              {project.client}
-                            </span>
-                          </div>
-                          <div>
-                            <span className={`block text-xs uppercase tracking-wider font-semibold mb-1 ${project.highlight ? "text-gray-400" : "text-muted-foreground"}`}>
-                              Duration
-                            </span>
-                            <span className={`text-sm font-medium flex items-center gap-1 md:justify-end ${project.highlight ? "text-gray-200" : "text-primary"}`}>
-                              <Clock size={13} className="shrink-0" />
-                              {project.duration}
-                            </span>
-                          </div>
+                        <div>
+                          <span className={`block text-xs uppercase tracking-wider font-semibold mb-1 ${project.highlight ? "text-gray-400" : "text-muted-foreground"}`}>Duration</span>
+                          <span className={`text-sm font-medium flex items-center gap-1 md:justify-end ${project.highlight ? "text-gray-200" : "text-primary"}`}>
+                            <Clock size={13} className="shrink-0" />
+                            {project.duration}
+                          </span>
                         </div>
                       </div>
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="py-20 bg-muted border-t border-border">
-          <div className="container mx-auto px-4 md:px-8 text-center">
-            <div className="max-w-2xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-black text-primary mb-4">Have a Project in Mind?</h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                Whether it's a large-scale government mandate or a private estate, we bring the same rigour and precision to every engagement.
-              </p>
-              <Link href="/request-survey">
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-bold rounded-none h-14 px-8 text-base" data-testid="button-cta-request-survey">
-                  Request a Survey <ArrowRight className="ml-2" size={18} />
-                </Button>
-              </Link>
-            </div>
+        <section className="py-20 bg-muted/50 border-t border-border">
+          <div className="container mx-auto px-4 md:px-8 text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-black text-primary mb-4">Have a Project in Mind?</h2>
+            <p className="text-lg text-muted-foreground mb-8">Tell us what you need and we’ll recommend the right surveying approach for your site, budget, and timeline.</p>
+            <Link href="/request-survey">
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-bold rounded-none h-14 px-8 text-base" data-testid="button-request-survey-services">
+                Request a Survey <ArrowRight className="ml-2" size={18} />
+              </Button>
+            </Link>
           </div>
         </section>
-
       </main>
     </>
   );

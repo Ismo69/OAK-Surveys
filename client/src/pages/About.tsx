@@ -14,9 +14,9 @@ export default function About() {
       />
     <main className="flex-1 w-full overflow-hidden">
       {/* Page Header */}
-      <section className="bg-primary text-white py-10 relative overflow-hidden">
+      <section className="bg-primary text-white py-8 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary/10 -skew-x-12 translate-x-32 transform z-0"></div>
-        <div className="container mx-auto px-4 md:px-8 relative z-10">
+        <div className="container mx-auto px-4 md:px-8 pt-2 relative z-10">
           <div className="flex items-center gap-2 mb-4">
             <div className="w-8 h-[2px] bg-secondary"></div>
             <span className="text-secondary font-bold uppercase tracking-wider text-sm">About Us</span>
@@ -93,10 +93,8 @@ export default function About() {
                       alt="Surv. (Alh.) Olatunde Al-Ghali Kasim, FNIS" 
                       className="w-full h-auto object-cover grayscale contrast-125 brightness-95"
                     />
-                    {/* Decorative subtle border */}
                     <div className="absolute inset-0 border-[0.5px] border-primary/10 m-1 pointer-events-none"></div>
                   </div>
-                  {/* Subtle red accent line under image */}
                   <div className="w-12 h-1 bg-secondary mt-6 ml-2"></div>
                 </div>
               </div>
@@ -138,82 +136,8 @@ export default function About() {
                   <p>
                     His legacy continues to inspire our work and guide our values as we strive to uphold the same standards of precision, service, and professionalism that defined his career.
                   </p>
-
-                  <p className="font-medium text-primary italic pt-4">
-                    We honour his memory with deep respect and gratitude.
-                  </p>
                 </div>
               </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Leadership */}
-      <section className="py-24 bg-muted/30 border-t border-border">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="flex flex-col md:flex-row-reverse gap-12 lg:gap-20 items-start">
-              
-              {/* Image Column */}
-              <div className="w-full md:w-5/12 lg:w-2/5 shrink-0">
-                <div className="sticky top-32">
-                  <div className="relative p-3 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.08)] rounded-sm border border-gray-100">
-                    <img 
-                      src={leadershipImage} 
-                      alt="Surv. Kolade Kasim" 
-                      className="w-full aspect-[4/5] object-cover object-top grayscale-[20%] contrast-110"
-                    />
-                    {/* Decorative subtle border */}
-                    <div className="absolute inset-0 border-[0.5px] border-primary/10 m-1 pointer-events-none"></div>
-                  </div>
-                  {/* Subtle red accent line under image */}
-                  <div className="w-12 h-1 bg-secondary mt-6 ml-auto mr-2"></div>
-                </div>
-              </div>
-
-              {/* Text Column */}
-              <div className="w-full md:w-7/12 lg:w-3/5">
-                <div className="mb-10">
-                  <div className="flex items-center gap-2 mb-6">
-                    <div className="w-8 h-[2px] bg-secondary"></div>
-                    <span className="text-secondary font-bold uppercase tracking-wider text-sm">Our Leadership</span>
-                  </div>
-                  
-                  <div className="mb-8 pb-8 border-b border-gray-200">
-                    <h3 className="text-3xl md:text-4xl font-black text-primary mb-3">
-                      Surv. Kolade Kasim
-                    </h3>
-                    <p className="text-xl text-muted-foreground font-medium">
-                      Managing Partner & CEO
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-6 text-lg text-muted-foreground leading-relaxed font-sans font-light mb-10">
-                  <p>
-                    Kolade Kasim is a seasoned leader in the surveying and geoinformatics industry, guiding Oak Surveys with a forward-looking vision rooted in precision and responsible development.
-                  </p>
-                  
-                  <p>
-                    With extensive professional experience and an unwavering commitment to technical excellence, he leads the firm's strategic operations across major infrastructure and development projects in Nigeria.
-                  </p>
-
-                  <p>
-                    Beyond Oak Surveys, he served two terms as Chairman of the Nigerian Institution of Surveyors (Lagos Chapter), reflecting his deep dedication to advancing the profession, advocating for standard practices, and elevating industry benchmarks.
-                  </p>
-                </div>
-
-                {/* Highlight Quote */}
-                <div className="bg-white p-8 md:p-10 border-l-4 border-secondary shadow-sm relative">
-                  <Quote className="absolute top-6 right-8 text-primary/10 w-16 h-16" />
-                  <p className="text-xl md:text-2xl font-heading font-medium text-primary leading-snug italic relative z-10">
-                    "For any meaningful development, consulting surveyors is crucial. Just like in smart cities around the world, surveyors play a vital role in ensuring quality and responsible development."
-                  </p>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
@@ -229,18 +153,18 @@ export default function About() {
                 <div className="w-14 h-14 bg-secondary flex items-center justify-center mb-6 text-white rounded-sm">
                   <Eye size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-primary mb-4">Our Vision</h3>
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  To be the most trusted and technologically advanced geospatial consultancy in West Africa, setting the benchmark for precision in engineering and land development.
+                <h3 className="text-2xl font-black text-primary mb-4">Our Vision</h3>
+                <p className="text-muted-foreground leading-relaxed text-lg">
+                  To remain the trusted benchmark for surveying precision and geospatial intelligence in Nigeria, continually setting new standards in accuracy, reliability, and innovation.
                 </p>
               </div>
               <div className="bg-white p-10 shadow-sm border border-border hover:border-secondary transition-colors">
-                <div className="w-14 h-14 bg-secondary flex items-center justify-center mb-6 text-white rounded-sm">
+                <div className="w-14 h-14 bg-primary flex items-center justify-center mb-6 text-white rounded-sm">
                   <Target size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-primary mb-4">Our Mission</h3>
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  To deliver accurate, reliable, and timely surveying and mapping solutions that empower our clients to build sustainable infrastructure and make informed spatial decisions.
+                <h3 className="text-2xl font-black text-primary mb-4">Our Mission</h3>
+                <p className="text-muted-foreground leading-relaxed text-lg">
+                  To provide clients with dependable, timely, and accurate surveying services through the application of best-in-class methodology, modern equipment, and professional expertise.
                 </p>
               </div>
             </div>
@@ -249,47 +173,106 @@ export default function About() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-8 h-[2px] bg-secondary"></div>
-                <span className="text-secondary font-bold uppercase tracking-wider text-sm">Core Values</span>
+                <span className="text-secondary font-bold uppercase tracking-wider text-sm">Our Principles</span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-black text-primary mb-10">What Drives Us Forward</h2>
-              
-              <div className="space-y-8">
-                {[
-                  {
-                    title: "Uncompromising Precision",
-                    desc: "We understand that our data is the foundation of major investments. We never guess; we measure."
-                  },
-                  {
-                    title: "Professional Integrity",
-                    desc: "Honesty and ethical conduct guide every survey, report, and client interaction we undertake."
-                  },
-                  {
-                    title: "Technological Advancement",
-                    desc: "We continuously adapt and adopt proven modern technologies to enhance accuracy and efficiency."
-                  },
-                  {
-                    title: "Client Partnership",
-                    desc: "We view ourselves as partners in our clients' success, providing proactive advice and responsive service."
-                  }
-                ].map((value, idx) => (
-                  <div key={idx} className="flex gap-5">
-                    <div className="mt-1">
-                      <div className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
-                        {idx + 1}
-                      </div>
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-bold text-primary mb-2">{value.title}</h4>
-                      <p className="text-muted-foreground">{value.desc}</p>
-                    </div>
+              <h3 className="text-3xl font-black text-primary mb-8">Core Values</h3>
+              <div className="space-y-6">
+                <div className="flex gap-4 items-start p-6 bg-white border border-border hover:border-secondary transition-colors">
+                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={22} />
+                  <div>
+                    <h4 className="text-lg font-bold text-primary mb-2">Precision</h4>
+                    <p className="text-muted-foreground leading-relaxed">Every coordinate, boundary, and deliverable is handled with uncompromising accuracy.</p>
                   </div>
-                ))}
+                </div>
+                <div className="flex gap-4 items-start p-6 bg-white border border-border hover:border-secondary transition-colors">
+                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={22} />
+                  <div>
+                    <h4 className="text-lg font-bold text-primary mb-2">Integrity</h4>
+                    <p className="text-muted-foreground leading-relaxed">We work with transparency, professionalism, and a deep respect for client trust.</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start p-6 bg-white border border-border hover:border-secondary transition-colors">
+                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={22} />
+                  <div>
+                    <h4 className="text-lg font-bold text-primary mb-2">Innovation</h4>
+                    <p className="text-muted-foreground leading-relaxed">We embrace modern tools and methods to improve efficiency, clarity, and outcomes.</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start p-6 bg-white border border-border hover:border-secondary transition-colors">
+                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={22} />
+                  <div>
+                    <h4 className="text-lg font-bold text-primary mb-2">Service</h4>
+                    <p className="text-muted-foreground leading-relaxed">We are committed to responsive, dependable support that helps clients move forward with confidence.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </main>
+
+      {/* Leadership Team */}
+      <section className="py-20 bg-background border-t border-border">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <div className="w-8 h-[2px] bg-secondary"></div>
+              <span className="text-secondary font-bold uppercase tracking-wider text-sm">Leadership</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-black text-primary mb-4">A Team of Seasoned Professionals</h2>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              The people behind Oak Surveys combine decades of practical field experience with technical expertise and a commitment to excellence.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {[{
+              name: "Surv. (Engr.) Kolade Kasim",
+              role: "Chief Executive Officer",
+              image: leadershipImage,
+              description: "A professional surveyor with deep experience in project execution, client management, and organizational leadership."
+            }, {
+              name: "Veteran Technical Staff",
+              role: "Operations & Field Teams",
+              image: historyImage,
+              description: "Our multidisciplinary teams combine field knowledge, technical precision, and modern geospatial workflows to deliver dependable results."
+            }].map((member, idx) => (
+              <div key={idx} className="bg-white border border-border shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                <img src={member.image} alt={member.name} className="w-full h-72 object-cover" />
+                <div className="p-8">
+                  <h3 className="text-2xl font-black text-primary mb-2">{member.name}</h3>
+                  <p className="text-secondary font-bold uppercase tracking-wider text-sm mb-4">{member.role}</p>
+                  <p className="text-muted-foreground leading-relaxed">{member.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20 bg-primary text-white">
+        <div className="container mx-auto px-4 md:px-8 max-w-5xl">
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <div className="w-8 h-[2px] bg-secondary"></div>
+              <span className="text-secondary font-bold uppercase tracking-wider text-sm">Client Confidence</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-black mb-4">What Our Clients Value</h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white/5 border border-white/10 p-8">
+              <Quote className="text-secondary mb-4" size={28} />
+              <p className="text-white/90 leading-relaxed text-lg mb-6">Oak Surveys consistently delivers accurate, reliable, and timely survey data that supports project decisions with confidence.</p>
+              <div className="text-sm text-white/70 font-medium">Private Developer, Lagos</div>
+            </div>
+            <div className="bg-white/5 border border-white/10 p-8">
+              <Quote className="text-secondary mb-4" size={28} />
+              <p className="text-white/90 leading-relaxed text-lg mb-6">Their professionalism, field discipline, and attention to detail make them a trusted surveying partner on complex assignments.</p>
+              <div className="text-sm text-white/70 font-medium">Infrastructure Client, Nigeria</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
