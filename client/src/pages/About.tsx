@@ -16,7 +16,7 @@ export default function About() {
       {/* Page Header */}
       <section className="bg-primary text-white py-8 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary/10 -skew-x-12 translate-x-32 transform z-0"></div>
-        <div className="container mx-auto px-4 md:px-8 pt-2 relative z-10">
+        <div className="container mx-auto px-4 md:px-8 pt-0 relative z-10">
           <div className="flex items-center gap-2 mb-4">
             <div className="w-8 h-[2px] bg-secondary"></div>
             <span className="text-secondary font-bold uppercase tracking-wider text-sm">About Us</span>
