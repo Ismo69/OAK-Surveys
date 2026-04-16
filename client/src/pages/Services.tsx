@@ -2,7 +2,7 @@ import { Map, Compass, Waves, Building2, BarChart, ArrowRight, Check } from "luc
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { PageSeo } from "@/components/PageSeo";
-import landImage from "@/assets/images/service-land-equipment.jpg";
+import landImage from "@/assets/images/service-land-generated.png";
 import engineeringImage from "@/assets/images/service-engineering.jpg";
 import geodeticImage from "@/assets/images/service-geodetic.jpg";
 import hydrographicImage from "@/assets/images/service-hydrographic.jpg";
