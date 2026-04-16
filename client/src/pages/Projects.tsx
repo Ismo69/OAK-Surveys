@@ -82,7 +82,7 @@ export default function Projects() {
                 <div className="text-sm text-white/80 mt-1 font-medium">Years of Experience</div>
               </div>
               <div className="px-4">
-                <div className="text-3xl md:text-4xl font-black">1000s</div>
+                <div className="text-3xl md:text-4xl font-black">1,000+</div>
                 <div className="text-sm text-white/80 mt-1 font-medium">Projects Delivered</div>
               </div>
               <div className="px-4">
