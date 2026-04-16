@@ -81,7 +81,7 @@
 }
 
 
-@keyframes carouselProgress {
-  from { width: 0%; }
-  to { width: 100%; }
+@keyframes dotExpand {
+  from { width: 8px; }
+  to { width: 28px; }
 }

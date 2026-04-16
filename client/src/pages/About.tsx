@@ -442,13 +442,18 @@ export default function About() {
                 </button>
 
                 {/* Dots */}
-                <div className="flex gap-2">
+                <div className="flex gap-2 items-center">
                   {teamMembers.map((_, idx) => (
                     <button
-                      key={idx}
+                      key={idx === activeIndex ? `active-${activeIndex}` : idx}
                       onClick={() => { setActiveIndex(idx); startTimer(); }}
                       data-testid={`team-carousel-dot-${idx}`}
-                      className={`h-2 rounded-full transition-all duration-300 ${idx === activeIndex ? "bg-secondary w-6" : "bg-border w-2 hover:bg-muted-foreground"}`}
+                      className={`h-2 rounded-full ${idx === activeIndex ? "bg-secondary" : "bg-border w-2 hover:bg-muted-foreground"}`}
+                      style={idx === activeIndex ? {
+                        animation: 'dotExpand 4s linear forwards',
+                        animationPlayState: isHovered ? 'paused' : 'running',
+                        width: '8px',
+                      } : {}}
                       aria-label={`Go to slide ${idx + 1}`}
                     />
                   ))}
@@ -464,20 +469,6 @@ export default function About() {
                 </button>
               </div>
 
-              {/* Progress bar */}
-              <div className="mt-4 h-[2px] bg-border overflow-hidden max-w-xs mx-auto">
-                <div
-                  key={activeIndex}
-                  className="h-full bg-secondary"
-                  style={{
-                    animation: 'carouselProgress 4s linear forwards',
-                    animationPlayState: isHovered ? 'paused' : 'running',
-                  }}
-                />
-              </div>
-              {isHovered && (
-                <p className="text-center text-xs text-muted-foreground mt-2">Paused — move cursor away to resume</p>
-              )}
             </div>
           </div>
         </section>
