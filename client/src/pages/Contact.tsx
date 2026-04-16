@@ -66,7 +66,7 @@ export default function Contact() {
       />
     <main className="flex-1 w-full overflow-hidden">
       {/* Page Header */}
-      <section className="bg-primary text-white py-20 relative overflow-hidden">
+      <section className="bg-primary text-white py-10 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary/10 -skew-x-12 translate-x-32 transform z-0"></div>
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="flex items-center gap-2 mb-4">
