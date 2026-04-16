@@ -1,51 +1,75 @@
-import { Target, Eye, Quote, ChevronLeft, ChevronRight } from "lucide-react";
-import { useState, useEffect } from "react";
+import { Target, Eye, Quote, ChevronLeft, ChevronRight, UserRound } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
 import { PageSeo } from "@/components/PageSeo";
 import historyImage from "@/assets/images/about-history-generated.png";
 import founderImage from "@assets/dad_pic_1773246913134.jpg";
 import leadershipImage from "@assets/kolade_kasim_portrait.jpg";
 import nisLogo from "@assets/nis_logo_whitebg-removebg-preview_1776247984208.png";
 
-const teamSlides = [
+const teamMembers = [
   {
-    role: "Licensed Surveyors",
-    description: "We work with a network of licensed and registered professional surveyors across Nigeria, bringing deep field expertise to every project we undertake.",
-    accent: "bg-primary",
+    name: "Surv. A. Ibrahim",
+    role: "Senior Land Surveyor",
+    bio: "Over 18 years of experience in boundary demarcation, cadastral surveys, and title documentation across Lagos and South-West Nigeria.",
+    initials: "AI",
   },
   {
-    role: "GIS & Mapping Specialists",
-    description: "Our geospatial team combines satellite data, drone photogrammetry, and GIS platforms to deliver precise, actionable spatial intelligence.",
-    accent: "bg-secondary",
+    name: "Surv. C. Okonkwo",
+    role: "Engineering Surveys Lead",
+    bio: "Specialises in setting-out, as-built surveys, and deformation monitoring for major road and bridge infrastructure projects.",
+    initials: "CO",
   },
   {
-    role: "Field Technicians",
-    description: "Experienced field crews equipped with modern total stations, GNSS receivers, and echo sounders ensure data accuracy on every site.",
-    accent: "bg-primary",
+    name: "Surv. T. Bello",
+    role: "Hydrographic Surveyor",
+    bio: "Skilled in bathymetric surveys, dredging support, and coastal mapping for marine engineering and waterway development projects.",
+    initials: "TB",
   },
   {
-    role: "Engineering Support Staff",
-    description: "Our technical office team processes survey data, prepares drawings and reports, and coordinates seamlessly with engineering partners.",
-    accent: "bg-secondary",
+    name: "Surv. F. Adeyemi",
+    role: "GIS & Remote Sensing Analyst",
+    bio: "Experienced in UAV photogrammetry, spatial data processing, and GIS database creation for urban planning and infrastructure mapping.",
+    initials: "FA",
   },
   {
-    role: "Intern Surveyors",
-    description: "We actively offer internship opportunities for surveying students and early-career professionals looking to gain hands-on field and office experience.",
-    accent: "bg-primary",
+    name: "Surv. M. Danladi",
+    role: "Geodetic Control Specialist",
+    bio: "Focuses on GPS/GNSS control network establishment and datum transformation for large-scale national and regional projects.",
+    initials: "MD",
+  },
+  {
+    name: "Intern Position Open",
+    role: "Surveying Intern",
+    bio: "We welcome motivated surveying students and fresh graduates seeking hands-on field and office experience. Reach out to learn more.",
+    initials: "?",
+    isOpen: true,
   },
 ];
 
 export default function About() {
-  const [activeSlide, setActiveSlide] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const visibleCount = 3;
+  const total = teamMembers.length;
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const startTimer = () => {
+    if (timerRef.current) clearInterval(timerRef.current);
+    timerRef.current = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % total);
+    }, 4000);
+  };
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveSlide((prev) => (prev + 1) % teamSlides.length);
-    }, 4000);
-    return () => clearInterval(timer);
+    startTimer();
+    return () => { if (timerRef.current) clearInterval(timerRef.current); };
   }, []);
 
-  const prev = () => setActiveSlide((s) => (s - 1 + teamSlides.length) % teamSlides.length);
-  const next = () => setActiveSlide((s) => (s + 1) % teamSlides.length);
+  const prev = () => { setActiveIndex((s) => (s - 1 + total) % total); startTimer(); };
+  const next = () => { setActiveIndex((s) => (s + 1) % total); startTimer(); };
+
+  const getVisible = () => {
+    return Array.from({ length: visibleCount }, (_, i) => teamMembers[(activeIndex + i) % total]);
+  };
 
   return (
     <>
@@ -332,7 +356,7 @@ export default function About() {
         </section>
 
         {/* Our Team */}
-        <section className="py-20 bg-primary text-white border-t border-white/10 overflow-hidden">
+        <section className="py-20 bg-background border-t border-border">
           <div className="container mx-auto px-4 md:px-8">
             <div className="max-w-4xl mx-auto text-center mb-12">
               <div className="flex items-center justify-center gap-2 mb-4">
@@ -340,63 +364,83 @@ export default function About() {
                 <span className="text-secondary font-bold uppercase tracking-wider text-sm">Our Team</span>
                 <div className="w-8 h-[2px] bg-secondary"></div>
               </div>
-              <h2 className="text-3xl md:text-4xl font-black mb-4">People Behind the Precision</h2>
-              <p className="text-white/75 text-lg leading-relaxed max-w-2xl mx-auto">
-                We work with a variety of skilled surveyors and technical professionals. We also offer opportunities for interns who want to build a career in surveying and geospatial services.
+              <h2 className="text-3xl md:text-4xl font-black text-primary mb-4">People Behind the Precision</h2>
+              <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
+                We work with a variety of skilled surveyors and technical professionals across disciplines. We also offer opportunities for interns who want to build a career in surveying and geospatial services.
               </p>
             </div>
 
-            {/* Carousel */}
-            <div className="relative max-w-3xl mx-auto">
-              <div className="overflow-hidden">
-                <div
-                  className="flex transition-transform duration-500 ease-in-out"
-                  style={{ transform: `translateX(-${activeSlide * 100}%)` }}
-                >
-                  {teamSlides.map((slide, idx) => (
-                    <div key={idx} className="w-full shrink-0 px-2">
-                      <div className="bg-white/5 border border-white/10 p-10 md:p-14 text-center">
-                        <div className={`inline-block ${slide.accent} px-4 py-1.5 text-white text-sm font-bold uppercase tracking-widest mb-6`}>
-                          {slide.role}
+            {/* Cards + Controls */}
+            <div className="relative">
+              {/* Card Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-500">
+                {getVisible().map((member, i) => (
+                  <div
+                    key={`${activeIndex}-${i}`}
+                    className={`bg-white border border-border shadow-sm overflow-hidden flex flex-col animate-in fade-in duration-500 ${(member as any).isOpen ? "border-secondary/40" : ""}`}
+                    data-testid={`team-card-${i}`}
+                  >
+                    {/* Photo placeholder */}
+                    <div className={`w-full aspect-[4/3] flex items-center justify-center ${(member as any).isOpen ? "bg-secondary/10" : "bg-muted"}`}>
+                      {(member as any).isOpen ? (
+                        <div className="flex flex-col items-center gap-2 text-secondary/60">
+                          <UserRound size={56} strokeWidth={1.2} />
+                          <span className="text-xs font-semibold uppercase tracking-widest text-secondary">Position Open</span>
                         </div>
-                        <p className="text-white/85 text-lg md:text-xl leading-relaxed font-light">
-                          {slide.description}
-                        </p>
-                      </div>
+                      ) : (
+                        <div className="flex flex-col items-center gap-2">
+                          <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
+                            <span className="text-2xl font-black text-primary">{member.initials}</span>
+                          </div>
+                          <UserRound size={20} className="text-muted-foreground/30" />
+                          <span className="text-xs text-muted-foreground/50 uppercase tracking-wider">Photo coming soon</span>
+                        </div>
+                      )}
                     </div>
-                  ))}
-                </div>
+
+                    {/* Details */}
+                    <div className="p-6 flex-1 flex flex-col">
+                      <div className="w-8 h-0.5 bg-secondary mb-4"></div>
+                      <h3 className="text-lg font-black text-primary mb-1">{member.name}</h3>
+                      <p className="text-secondary text-sm font-bold uppercase tracking-wider mb-4">{member.role}</p>
+                      <p className="text-muted-foreground text-sm leading-relaxed flex-1">{member.bio}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
 
               {/* Prev / Next */}
-              <button
-                onClick={prev}
-                data-testid="team-carousel-prev"
-                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-5 w-10 h-10 bg-white/10 hover:bg-secondary border border-white/20 flex items-center justify-center transition-colors"
-                aria-label="Previous"
-              >
-                <ChevronLeft size={20} />
-              </button>
-              <button
-                onClick={next}
-                data-testid="team-carousel-next"
-                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-5 w-10 h-10 bg-white/10 hover:bg-secondary border border-white/20 flex items-center justify-center transition-colors"
-                aria-label="Next"
-              >
-                <ChevronRight size={20} />
-              </button>
+              <div className="flex items-center justify-center gap-4 mt-10">
+                <button
+                  onClick={prev}
+                  data-testid="team-carousel-prev"
+                  className="w-10 h-10 border border-border bg-white hover:bg-primary hover:text-white hover:border-primary flex items-center justify-center transition-colors"
+                  aria-label="Previous"
+                >
+                  <ChevronLeft size={20} />
+                </button>
 
-              {/* Dots */}
-              <div className="flex justify-center gap-2 mt-8">
-                {teamSlides.map((_, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => setActiveSlide(idx)}
-                    data-testid={`team-carousel-dot-${idx}`}
-                    className={`w-2 h-2 rounded-full transition-all duration-300 ${idx === activeSlide ? "bg-secondary w-6" : "bg-white/30 hover:bg-white/60"}`}
-                    aria-label={`Go to slide ${idx + 1}`}
-                  />
-                ))}
+                {/* Dots */}
+                <div className="flex gap-2">
+                  {teamMembers.map((_, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => { setActiveIndex(idx); startTimer(); }}
+                      data-testid={`team-carousel-dot-${idx}`}
+                      className={`h-2 rounded-full transition-all duration-300 ${idx === activeIndex ? "bg-secondary w-6" : "bg-border w-2 hover:bg-muted-foreground"}`}
+                      aria-label={`Go to slide ${idx + 1}`}
+                    />
+                  ))}
+                </div>
+
+                <button
+                  onClick={next}
+                  data-testid="team-carousel-next"
+                  className="w-10 h-10 border border-border bg-white hover:bg-primary hover:text-white hover:border-primary flex items-center justify-center transition-colors"
+                  aria-label="Next"
+                >
+                  <ChevronRight size={20} />
+                </button>
               </div>
             </div>
           </div>
