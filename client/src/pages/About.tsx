@@ -52,6 +52,7 @@ const teamMembers = [
 
 export default function About() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
   const visibleCount = 3;
   const total = teamMembers.length;
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -74,6 +75,9 @@ export default function About() {
 
   const prev = () => { setActiveIndex((s) => (s - 1 + total) % total); startTimer(); };
   const next = () => { setActiveIndex((s) => (s + 1) % total); startTimer(); };
+
+  const handleMouseEnter = () => { setIsHovered(true); stopTimer(); };
+  const handleMouseLeave = () => { setIsHovered(false); startTimer(); };
 
   const getVisible = () => {
     return Array.from({ length: visibleCount }, (_, i) => teamMembers[(activeIndex + i) % total]);
@@ -384,8 +388,8 @@ export default function About() {
               {/* Card Grid */}
               <div
                 className="grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-500"
-                onMouseEnter={stopTimer}
-                onMouseLeave={startTimer}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
                 {getVisible().map((member, i) => (
                   <div
@@ -459,6 +463,21 @@ export default function About() {
                   <ChevronRight size={20} />
                 </button>
               </div>
+
+              {/* Progress bar */}
+              <div className="mt-4 h-[2px] bg-border overflow-hidden max-w-xs mx-auto">
+                <div
+                  key={activeIndex}
+                  className="h-full bg-secondary"
+                  style={{
+                    animation: 'carouselProgress 4s linear forwards',
+                    animationPlayState: isHovered ? 'paused' : 'running',
+                  }}
+                />
+              </div>
+              {isHovered && (
+                <p className="text-center text-xs text-muted-foreground mt-2">Paused — move cursor away to resume</p>
+              )}
             </div>
           </div>
         </section>
