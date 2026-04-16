@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { PageSeo } from "@/components/PageSeo";
 import historyImage from "@/assets/images/about-history-generated.png";
 import founderImage from "@assets/dad_pic_1773246913134.jpg";
-import leadershipImage from "@assets/kolade_kasim_portrait.jpg";
+import leadershipImage from "@assets/WhatsApp_Image_2026-04-16_at_17.47.11_1776354977068.jpeg";
 import nisLogo from "@assets/nis_logo_whitebg-removebg-preview_1776247984208.png";
 
 const teamMembers = [
