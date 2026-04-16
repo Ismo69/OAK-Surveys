@@ -394,6 +394,14 @@ export default function Home() {
                         </Link>
                         . Alternatively, call us directly on +234 803 600 4494 or email info@oaksurveys.com and our team will respond within 24–48 business hours.
                       </>
+                    ) : idx === 3 ? (
+                      <>
+                        {faq.a}{" "}See the services we offer{" "}
+                        <Link href="/services" className="text-primary font-semibold underline" data-testid="link-services-faq">
+                          here
+                        </Link>
+                        .
+                      </>
                     ) : (
                       faq.a
                     )}
