@@ -29,7 +29,7 @@ export default function About() {
         </section>
 
         {/* History & Credibility */}
-        <section className="py-8 lg:py-16">
+        <section className="pt-2 pb-8 lg:pt-4 lg:pb-16">
           <div className="container mx-auto px-4 md:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
