@@ -5,37 +5,48 @@ import historyImage from "@/assets/images/about-history-generated.png";
 import founderImage from "@assets/dad_pic_1773246913134.jpg";
 import leadershipImage from "@assets/WhatsApp_Image_2026-04-16_at_17.47.11_1776354977068.jpeg";
 import nisLogo from "@assets/nis_logo_whitebg-removebg-preview_1776247984208.png";
+import owoyomiImage from "@assets/WhatsApp_Image_2026-04-16_at_17.59.46_1776355512389.jpeg";
 
 const teamMembers = [
   {
-    name: "Surv. A. Ibrahim",
-    role: "Senior Land Surveyor",
-    bio: "Over 18 years of experience in boundary demarcation, cadastral surveys, and title documentation across Lagos and South-West Nigeria.",
-    initials: "AI",
+    name: "Surv. Owoyomi Oludolapo Oladimeji",
+    credentials: "MNIS, PMP",
+    role: "Junior Partner & Senior Surveyor",
+    bio: "A B.Sc. graduate in Surveying & Geoinformatics Engineering from the University of Lagos, Surv. Owoyomi has been with Oak Surveys since 2011. A Corporate Member of NIS and Certified Project Management Professional (PMP), his extensive portfolio spans oil & gas facilities, dam infrastructure, commercial developments, and cross-country route surveys across Nigeria.",
+    initials: "OO",
+    photo: owoyomiImage,
   },
   {
     name: "Surv. C. Okonkwo",
+    credentials: "",
     role: "Engineering Surveys Lead",
     bio: "Specialises in setting-out, as-built surveys, and deformation monitoring for major road and bridge infrastructure projects.",
     initials: "CO",
+    photo: null,
   },
   {
     name: "Surv. T. Bello",
+    credentials: "",
     role: "Hydrographic Surveyor",
     bio: "Skilled in bathymetric surveys, dredging support, and coastal mapping for marine engineering and waterway development projects.",
     initials: "TB",
+    photo: null,
   },
   {
     name: "Surv. F. Adeyemi",
+    credentials: "",
     role: "GIS & Remote Sensing Analyst",
     bio: "Experienced in UAV photogrammetry, spatial data processing, and GIS database creation for urban planning and infrastructure mapping.",
     initials: "FA",
+    photo: null,
   },
   {
     name: "Surv. M. Danladi",
+    credentials: "",
     role: "Geodetic Control Specialist",
     bio: "Focuses on GPS/GNSS control network establishment and datum transformation for large-scale national and regional projects.",
     initials: "MD",
+    photo: null,
   },
 ];
 
@@ -374,13 +385,14 @@ export default function About() {
                     className={`bg-white border border-border shadow-sm overflow-hidden flex flex-col animate-in fade-in duration-500 ${(member as any).isOpen ? "border-secondary/40" : ""}`}
                     data-testid={`team-card-${i}`}
                   >
-                    {/* Photo placeholder */}
-                    <div className={`w-full aspect-[4/3] flex items-center justify-center ${(member as any).isOpen ? "bg-secondary/10" : "bg-muted"}`}>
-                      {(member as any).isOpen ? (
-                        <div className="flex flex-col items-center gap-2 text-secondary/60">
-                          <UserRound size={56} strokeWidth={1.2} />
-                          <span className="text-xs font-semibold uppercase tracking-widest text-secondary">Position Open</span>
-                        </div>
+                    {/* Photo */}
+                    <div className="w-full aspect-[4/3] overflow-hidden bg-muted flex items-center justify-center">
+                      {member.photo ? (
+                        <img
+                          src={member.photo}
+                          alt={member.name}
+                          className="w-full h-full object-cover object-top"
+                        />
                       ) : (
                         <div className="flex flex-col items-center gap-2">
                           <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
@@ -395,7 +407,10 @@ export default function About() {
                     {/* Details */}
                     <div className="p-6 flex-1 flex flex-col">
                       <div className="w-8 h-0.5 bg-secondary mb-4"></div>
-                      <h3 className="text-lg font-black text-primary mb-1">{member.name}</h3>
+                      <h3 className="text-lg font-black text-primary mb-0.5">{member.name}</h3>
+                      {member.credentials && (
+                        <p className="text-muted-foreground text-xs font-semibold mb-1">{member.credentials}</p>
+                      )}
                       <p className="text-secondary text-sm font-bold uppercase tracking-wider mb-4">{member.role}</p>
                       <p className="text-muted-foreground text-sm leading-relaxed flex-1">{member.bio}</p>
                     </div>
