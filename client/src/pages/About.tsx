@@ -63,6 +63,10 @@ export default function About() {
     }, 4000);
   };
 
+  const stopTimer = () => {
+    if (timerRef.current) clearInterval(timerRef.current);
+  };
+
   useEffect(() => {
     startTimer();
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
@@ -378,7 +382,11 @@ export default function About() {
             {/* Cards + Controls */}
             <div className="relative">
               {/* Card Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-500">
+              <div
+                className="grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-500"
+                onMouseEnter={stopTimer}
+                onMouseLeave={startTimer}
+              >
                 {getVisible().map((member, i) => (
                   <div
                     key={`${activeIndex}-${i}`}
