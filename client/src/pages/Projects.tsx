@@ -60,8 +60,8 @@ export default function Projects() {
       />
       <main className="flex-1 w-full overflow-hidden">
         <section className="bg-primary text-white py-8 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary/10 -skew-x-12 translate-x-32 transform z-0"></div>
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full -translate-x-32 translate-y-16 z-0"></div>
+          <div className="absolute top-0 right-0 w-2/5 h-full z-0" style={{backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.12) 1px, transparent 1px)', backgroundSize: '22px 22px'}}></div>
+          <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-secondary z-0"></div>
           <div className="container mx-auto px-4 md:px-8 relative z-10">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-[2px] bg-secondary"></div>
