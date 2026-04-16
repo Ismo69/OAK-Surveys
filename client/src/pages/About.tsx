@@ -390,7 +390,7 @@ export default function About() {
                 {getVisible().map((member, i) => (
                   <div
                     key={`${activeIndex}-${i}`}
-                    className={`bg-white border border-border shadow-sm overflow-hidden flex flex-col animate-in fade-in duration-500 ${(member as any).isOpen ? "border-secondary/40" : ""}`}
+                    className={`bg-white border border-border shadow-sm overflow-hidden flex flex-col animate-in fade-in duration-500 transition-all hover:shadow-xl hover:border-secondary hover:-translate-y-1 ${(member as any).isOpen ? "border-secondary/40" : ""}`}
                     data-testid={`team-card-${i}`}
                   >
                     {/* Photo */}
