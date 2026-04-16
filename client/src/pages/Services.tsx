@@ -1,104 +1,147 @@
-import { PageSeo } from "@/components/PageSeo";
-import { ArrowRight, CheckCircle2, Ruler, MapPin, Satellite, Waves, Layers } from "lucide-react";
+import { Map, Compass, Waves, Building2, BarChart, ArrowRight, Check } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-
-const services = [
-  {
-    id: "land-surveying",
-    title: "Land Surveying",
-    description: "Boundary definition, subdivision surveys, acreage measurement, and title documentation to support land administration and development.",
-    icon: Ruler,
-  },
-  {
-    id: "engineering-surveys",
-    title: "Engineering Surveys",
-    description: "Precise control, setting-out, alignment, and as-built surveys for roads, bridges, drainage, and structural works.",
-    icon: MapPin,
-  },
-  {
-    id: "geodetic-surveys",
-    title: "Geodetic Surveys",
-    description: "High-accuracy coordinate control, datum transformation, and network establishment for large-scale projects and infrastructure planning.",
-    icon: Satellite,
-  },
-  {
-    id: "hydrographic-surveys",
-    title: "Hydrographic Surveys",
-    description: "Bathymetric and waterway mapping for ports, rivers, shoreline development, and marine engineering applications.",
-    icon: Waves,
-  },
-  {
-    id: "geo-mapping",
-    title: "Geo-Information & Mapping",
-    description: "GIS, spatial analysis, orthophoto production, drone mapping, and digital cartography for planning and decision-making.",
-    icon: Layers,
-  },
-];
+import { PageSeo } from "@/components/PageSeo";
+import landImage from "@/assets/images/service-land-equipment.jpg";
+import engineeringImage from "@/assets/images/service-engineering.jpg";
+import geodeticImage from "@/assets/images/service-geodetic.jpg";
+import hydrographicImage from "@/assets/images/service-hydrographic.jpg";
+import droneImage from "@/assets/images/service-drone.jpg";
 
 export default function Services() {
+  const services = [
+    {
+      id: "land-surveying",
+      title: "Land Surveying",
+      icon: <Map className="w-10 h-10" />,
+      description: "Comprehensive land surveying services for property establishment, boundary disputes, and title registrations.",
+      useCases: ["Boundary Demarcation", "Cadastral Mapping", "Subdivision Surveys", "Title Registrations"],
+      benefits: "Secure legal boundaries and prevent costly land disputes before development begins.",
+      image: landImage
+    },
+    {
+      id: "engineering-surveys",
+      title: "Engineering Surveys",
+      icon: <Building2 className="w-10 h-10" />,
+      description: "High-precision surveying to support civil engineering, construction, and infrastructure projects from design to completion.",
+      useCases: ["Setting Out / Layout", "As-Built Surveys", "Deformation Monitoring", "Earthwork Computations"],
+      benefits: "Ensure structural elements are constructed exactly to design specifications, minimizing rework.",
+      image: engineeringImage
+    },
+    {
+      id: "geodetic-surveys",
+      title: "Geodetic Surveys",
+      icon: <Compass className="w-10 h-10" />,
+      description: "Large-scale surveying that accounts for the curvature of the earth, establishing control networks for major projects.",
+      useCases: ["Control Networks Establishment", "GPS/GNSS Surveys", "Datum Transformations"],
+      benefits: "Provide a reliable, consistent coordinate framework for large-scale municipal or state infrastructure.",
+      image: geodeticImage
+    },
+    {
+      id: "hydrographic-surveys",
+      title: "Hydrographic Surveys",
+      icon: <Waves className="w-10 h-10" />,
+      description: "Mapping of underwater topography for marine engineering, dredging, and navigation purposes.",
+      useCases: ["Bathymetric Mapping", "Dredging Support", "River Basin Mapping", "Coastal Development"],
+      benefits: "Accurate underwater terrain models for safe navigation and effective marine construction.",
+      image: hydrographicImage
+    },
+    {
+      id: "geo-information",
+      title: "Geo-Information & Mapping",
+      icon: <BarChart className="w-10 h-10" />,
+      description: "Advanced spatial data collection, analysis, and visualization using modern GIS and remote sensing tools.",
+      useCases: ["Topographic Mapping", "UAV/Drone Photogrammetry", "GIS Database Creation", "Spatial Analysis"],
+      benefits: "Visualize complex spatial relationships to support urban planning, agriculture, and resource management.",
+      image: droneImage
+    }
+  ];
+
   return (
     <>
       <PageSeo
         title="Services | Oak Surveys – Professional Surveying Services in Lagos"
         description="Oak Surveys provides comprehensive surveying services in Lagos, Nigeria including land surveying, engineering surveys, hydrographic surveys, geodetic surveys, and geospatial mapping."
       />
-    <main className="flex-1 w-full overflow-hidden">
-      {/* Page Header */}
-      <section className="bg-primary text-white py-8 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary/10 -skew-x-12 translate-x-32 transform z-0"></div>
-        <div className="container mx-auto px-4 md:px-8 pt-2 relative z-10">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-8 h-[2px] bg-secondary"></div>
-            <span className="text-secondary font-bold uppercase tracking-wider text-sm">Our Expertise</span>
+      <main className="flex-1 w-full overflow-hidden">
+        {/* Page Header */}
+        <section className="bg-primary text-white py-8 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary/10 -skew-x-12 translate-x-32 transform z-0"></div>
+          <div className="container mx-auto px-4 md:px-8 relative z-10">
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-8 h-[2px] bg-secondary"></div>
+              <span className="text-secondary font-bold uppercase tracking-wider text-sm">Our Expertise</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6">Professional Services</h1>
+            <p className="text-lg md:text-xl text-gray-300 max-w-2xl">
+              Comprehensive geospatial and surveying solutions tailored for complex engineering and development challenges.
+            </p>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6">Professional Services</h1>
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl">
-            Comprehensive geospatial and surveying solutions tailored for complex engineering and development challenges.
-          </p>
-        </div>
-      </section>
+        </section>
 
-      {/* Services List */}
-      <section className="py-20 lg:py-32 bg-background">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="space-y-24">
-            {services.map((service, index) => (
-              <div 
-                key={service.id} 
-                id={service.id}
-                className={`flex flex-col ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 lg:gap-20 items-start`}
-              >
-                <div className="w-20 h-20 bg-primary flex items-center justify-center text-white shrink-0">
-                  <service.icon size={36} />
+        {/* Services List */}
+        <section className="py-20 lg:py-32 bg-background">
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="space-y-24">
+              {services.map((service, index) => (
+                <div
+                  key={service.id}
+                  id={service.id}
+                  className={`flex flex-col ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 lg:gap-20 items-start`}
+                >
+                  {/* Service Info */}
+                  <div className="lg:w-1/2">
+                    <div className="w-20 h-20 bg-muted flex items-center justify-center text-primary mb-8 rounded-sm">
+                      {service.icon}
+                    </div>
+                    <h2 className="text-3xl md:text-4xl font-black text-primary mb-6">{service.title}</h2>
+                    <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                      {service.description}
+                    </p>
+
+                    <div className="bg-muted p-8 border-l-4 border-secondary mb-8">
+                      <h4 className="font-bold text-primary mb-2">Client Benefit</h4>
+                      <p className="text-muted-foreground italic">"{service.benefits}"</p>
+                    </div>
+
+                    <h4 className="font-bold text-primary mb-4 text-lg">Typical Use Cases:</h4>
+                    <ul className="grid sm:grid-cols-2 gap-4">
+                      {service.useCases.map((useCase, idx) => (
+                        <li key={idx} className="flex items-center gap-3">
+                          <Check className="text-secondary shrink-0" size={18} />
+                          <span className="text-foreground font-medium">{useCase}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Service Image */}
+                  <div className="lg:w-1/2 w-full">
+                    <div className="aspect-video border border-border relative overflow-hidden">
+                      <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
+                    </div>
+                  </div>
                 </div>
-                <div className="flex-1">
-                  <h2 className="text-3xl md:text-4xl font-black text-primary mb-4">{service.title}</h2>
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">{service.description}</p>
-                  <ul className="space-y-3 text-muted-foreground">
-                    {["Detailed field execution", "Modern geospatial tools", "Delivered with precision"].map((item) => (
-                      <li key={item} className="flex items-center gap-3"><CheckCircle2 className="text-secondary shrink-0" size={18} />{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="py-20 bg-muted/50 border-t border-border">
-        <div className="container mx-auto px-4 md:px-8 text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-black text-primary mb-4">Need a Survey for Your Project?</h2>
-          <p className="text-lg text-muted-foreground mb-8">Tell us what you need and we’ll recommend the right surveying approach for your site, budget, and timeline.</p>
-          <Link href="/request-survey">
-            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-bold rounded-none h-14 px-8 text-base" data-testid="button-request-survey-services">
-              Request a Survey <ArrowRight className="ml-2" size={18} />
-            </Button>
-          </Link>
-        </div>
-      </section>
-    </main>
+        {/* Service CTA */}
+        <section className="bg-primary text-white py-24">
+          <div className="container mx-auto px-4 md:px-8 text-center">
+            <h2 className="text-3xl md:text-5xl font-black mb-6">Need a Custom Surveying Solution?</h2>
+            <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">
+              Every project has unique geospatial requirements. Discuss your specific needs with our principal surveyors.
+            </p>
+            <Link href="/request-survey">
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white rounded-none h-14 px-10 text-lg font-bold" data-testid="button-request-survey-services">
+                Consult With Our Team
+              </Button>
+            </Link>
+          </div>
+        </section>
+      </main>
     </>
   );
 }
