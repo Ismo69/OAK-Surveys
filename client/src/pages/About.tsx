@@ -291,7 +291,7 @@ export default function About() {
                     <div className="relative p-3 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.08)] rounded-sm border border-gray-100">
                       <img
                         src={leadershipImage}
-                        alt="Surv. Kolade Kasim"
+                        alt="Surv. Kolade Kasim, FNIS"
                         className="w-full aspect-[4/5] object-cover object-top grayscale-[20%] contrast-110"
                       />
                       {/* Decorative subtle border */}
@@ -312,7 +312,7 @@ export default function About() {
 
                     <div className="mb-8 pb-8 border-b border-gray-200">
                       <h3 className="text-3xl md:text-4xl font-black text-primary mb-3">
-                        Surv. Kolade Kasim
+                        Surv. Kolade Kasim, FNIS
                       </h3>
                       <p className="text-xl text-muted-foreground font-medium">
                         Managing Partner & CEO
