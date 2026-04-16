@@ -37,13 +37,6 @@ const teamMembers = [
     bio: "Focuses on GPS/GNSS control network establishment and datum transformation for large-scale national and regional projects.",
     initials: "MD",
   },
-  {
-    name: "Intern Position Open",
-    role: "Surveying Intern",
-    bio: "We welcome motivated surveying students and fresh graduates seeking hands-on field and office experience. Reach out to learn more.",
-    initials: "?",
-    isOpen: true,
-  },
 ];
 
 export default function About() {
