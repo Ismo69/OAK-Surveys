@@ -78,8 +78,79 @@ export default function About() {
           </div>
         </section>
 
+        {/* Mission, Vision, Values */}
+        <section className="py-20 bg-muted/50 border-t border-border">
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
+              {/* Vision & Mission */}
+              <div className="space-y-12">
+                <div className="bg-white p-10 shadow-sm border border-border hover:border-secondary transition-colors">
+                  <div className="w-14 h-14 bg-secondary flex items-center justify-center mb-6 text-white rounded-sm">
+                    <Eye size={28} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-primary mb-4">Our Vision</h3>
+                  <p className="text-muted-foreground text-lg leading-relaxed">
+                    To be the most trusted and technologically advanced geospatial consultancy in West Africa, setting the benchmark for precision in engineering and land development.
+                  </p>
+                </div>
+                <div className="bg-white p-10 shadow-sm border border-border hover:border-secondary transition-colors">
+                  <div className="w-14 h-14 bg-secondary flex items-center justify-center mb-6 text-white rounded-sm">
+                    <Target size={28} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-primary mb-4">Our Mission</h3>
+                  <p className="text-muted-foreground text-lg leading-relaxed">
+                    To deliver accurate, reliable, and timely surveying and mapping solutions that empower our clients to build sustainable infrastructure and make informed spatial decisions.
+                  </p>
+                </div>
+              </div>
+
+              {/* Core Values */}
+              <div>
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-8 h-[2px] bg-secondary"></div>
+                  <span className="text-secondary font-bold uppercase tracking-wider text-sm">Core Values</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-black text-primary mb-10">What Drives Us Forward</h2>
+
+                <div className="space-y-8">
+                  {[
+                    {
+                      title: "Uncompromising Precision",
+                      desc: "We understand that our data is the foundation of major investments. We never guess; we measure."
+                    },
+                    {
+                      title: "Professional Integrity",
+                      desc: "Honesty and ethical conduct guide every survey, report, and client interaction we undertake."
+                    },
+                    {
+                      title: "Technological Advancement",
+                      desc: "We continuously adapt and adopt proven modern technologies to enhance accuracy and efficiency."
+                    },
+                    {
+                      title: "Client Partnership",
+                      desc: "We view ourselves as partners in our clients' success, providing proactive advice and responsive service."
+                    }
+                  ].map((value, idx) => (
+                    <div key={idx} className="flex gap-5">
+                      <div className="mt-1">
+                        <div className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
+                          {idx + 1}
+                        </div>
+                      </div>
+                      <div>
+                        <h4 className="text-xl font-bold text-primary mb-2">{value.title}</h4>
+                        <p className="text-muted-foreground">{value.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Honouring the Legacy of Our Founder */}
-        <section className="py-24 bg-white">
+        <section className="py-24 bg-white border-t border-border">
           <div className="container mx-auto px-4 md:px-8">
             <div className="max-w-6xl mx-auto">
               <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-start">
@@ -219,76 +290,6 @@ export default function About() {
           </div>
         </section>
 
-        {/* Mission, Vision, Values */}
-        <section className="py-20 bg-muted/50 border-t border-border">
-          <div className="container mx-auto px-4 md:px-8">
-            <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
-              {/* Vision & Mission */}
-              <div className="space-y-12">
-                <div className="bg-white p-10 shadow-sm border border-border hover:border-secondary transition-colors">
-                  <div className="w-14 h-14 bg-secondary flex items-center justify-center mb-6 text-white rounded-sm">
-                    <Eye size={28} />
-                  </div>
-                  <h3 className="text-2xl font-bold text-primary mb-4">Our Vision</h3>
-                  <p className="text-muted-foreground text-lg leading-relaxed">
-                    To be the most trusted and technologically advanced geospatial consultancy in West Africa, setting the benchmark for precision in engineering and land development.
-                  </p>
-                </div>
-                <div className="bg-white p-10 shadow-sm border border-border hover:border-secondary transition-colors">
-                  <div className="w-14 h-14 bg-secondary flex items-center justify-center mb-6 text-white rounded-sm">
-                    <Target size={28} />
-                  </div>
-                  <h3 className="text-2xl font-bold text-primary mb-4">Our Mission</h3>
-                  <p className="text-muted-foreground text-lg leading-relaxed">
-                    To deliver accurate, reliable, and timely surveying and mapping solutions that empower our clients to build sustainable infrastructure and make informed spatial decisions.
-                  </p>
-                </div>
-              </div>
-
-              {/* Core Values */}
-              <div>
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-8 h-[2px] bg-secondary"></div>
-                  <span className="text-secondary font-bold uppercase tracking-wider text-sm">Core Values</span>
-                </div>
-                <h2 className="text-3xl md:text-4xl font-black text-primary mb-10">What Drives Us Forward</h2>
-
-                <div className="space-y-8">
-                  {[
-                    {
-                      title: "Uncompromising Precision",
-                      desc: "We understand that our data is the foundation of major investments. We never guess; we measure."
-                    },
-                    {
-                      title: "Professional Integrity",
-                      desc: "Honesty and ethical conduct guide every survey, report, and client interaction we undertake."
-                    },
-                    {
-                      title: "Technological Advancement",
-                      desc: "We continuously adapt and adopt proven modern technologies to enhance accuracy and efficiency."
-                    },
-                    {
-                      title: "Client Partnership",
-                      desc: "We view ourselves as partners in our clients' success, providing proactive advice and responsive service."
-                    }
-                  ].map((value, idx) => (
-                    <div key={idx} className="flex gap-5">
-                      <div className="mt-1">
-                        <div className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
-                          {idx + 1}
-                        </div>
-                      </div>
-                      <div>
-                        <h4 className="text-xl font-bold text-primary mb-2">{value.title}</h4>
-                        <p className="text-muted-foreground">{value.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
     </>
   );
