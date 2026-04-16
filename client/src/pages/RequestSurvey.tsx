@@ -76,6 +76,7 @@ export default function RequestSurvey() {
       {/* Page Header */}
       <section className="bg-primary text-white py-16 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary/10 -skew-x-12 translate-x-32 transform z-0"></div>
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full -translate-x-32 translate-y-16 z-0"></div>
         <div className="container mx-auto px-4 md:px-8 relative z-10 text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <div className="w-8 h-[2px] bg-secondary"></div>
