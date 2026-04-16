@@ -1,11 +1,52 @@
-import { Target, Eye, Quote } from "lucide-react";
+import { Target, Eye, Quote, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useEffect } from "react";
 import { PageSeo } from "@/components/PageSeo";
 import historyImage from "@/assets/images/about-history-generated.png";
 import founderImage from "@assets/dad_pic_1773246913134.jpg";
 import leadershipImage from "@assets/kolade_kasim_portrait.jpg";
 import nisLogo from "@assets/nis_logo_whitebg-removebg-preview_1776247984208.png";
 
+const teamSlides = [
+  {
+    role: "Licensed Surveyors",
+    description: "We work with a network of licensed and registered professional surveyors across Nigeria, bringing deep field expertise to every project we undertake.",
+    accent: "bg-primary",
+  },
+  {
+    role: "GIS & Mapping Specialists",
+    description: "Our geospatial team combines satellite data, drone photogrammetry, and GIS platforms to deliver precise, actionable spatial intelligence.",
+    accent: "bg-secondary",
+  },
+  {
+    role: "Field Technicians",
+    description: "Experienced field crews equipped with modern total stations, GNSS receivers, and echo sounders ensure data accuracy on every site.",
+    accent: "bg-primary",
+  },
+  {
+    role: "Engineering Support Staff",
+    description: "Our technical office team processes survey data, prepares drawings and reports, and coordinates seamlessly with engineering partners.",
+    accent: "bg-secondary",
+  },
+  {
+    role: "Intern Surveyors",
+    description: "We actively offer internship opportunities for surveying students and early-career professionals looking to gain hands-on field and office experience.",
+    accent: "bg-primary",
+  },
+];
+
 export default function About() {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveSlide((prev) => (prev + 1) % teamSlides.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const prev = () => setActiveSlide((s) => (s - 1 + teamSlides.length) % teamSlides.length);
+  const next = () => setActiveSlide((s) => (s + 1) % teamSlides.length);
+
   return (
     <>
       <PageSeo
@@ -285,6 +326,77 @@ export default function About() {
                   </div>
                 </div>
 
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Our Team */}
+        <section className="py-20 bg-primary text-white border-t border-white/10 overflow-hidden">
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="max-w-4xl mx-auto text-center mb-12">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <div className="w-8 h-[2px] bg-secondary"></div>
+                <span className="text-secondary font-bold uppercase tracking-wider text-sm">Our Team</span>
+                <div className="w-8 h-[2px] bg-secondary"></div>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-black mb-4">People Behind the Precision</h2>
+              <p className="text-white/75 text-lg leading-relaxed max-w-2xl mx-auto">
+                We work with a variety of skilled surveyors and technical professionals. We also offer opportunities for interns who want to build a career in surveying and geospatial services.
+              </p>
+            </div>
+
+            {/* Carousel */}
+            <div className="relative max-w-3xl mx-auto">
+              <div className="overflow-hidden">
+                <div
+                  className="flex transition-transform duration-500 ease-in-out"
+                  style={{ transform: `translateX(-${activeSlide * 100}%)` }}
+                >
+                  {teamSlides.map((slide, idx) => (
+                    <div key={idx} className="w-full shrink-0 px-2">
+                      <div className="bg-white/5 border border-white/10 p-10 md:p-14 text-center">
+                        <div className={`inline-block ${slide.accent} px-4 py-1.5 text-white text-sm font-bold uppercase tracking-widest mb-6`}>
+                          {slide.role}
+                        </div>
+                        <p className="text-white/85 text-lg md:text-xl leading-relaxed font-light">
+                          {slide.description}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Prev / Next */}
+              <button
+                onClick={prev}
+                data-testid="team-carousel-prev"
+                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-5 w-10 h-10 bg-white/10 hover:bg-secondary border border-white/20 flex items-center justify-center transition-colors"
+                aria-label="Previous"
+              >
+                <ChevronLeft size={20} />
+              </button>
+              <button
+                onClick={next}
+                data-testid="team-carousel-next"
+                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-5 w-10 h-10 bg-white/10 hover:bg-secondary border border-white/20 flex items-center justify-center transition-colors"
+                aria-label="Next"
+              >
+                <ChevronRight size={20} />
+              </button>
+
+              {/* Dots */}
+              <div className="flex justify-center gap-2 mt-8">
+                {teamSlides.map((_, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setActiveSlide(idx)}
+                    data-testid={`team-carousel-dot-${idx}`}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${idx === activeSlide ? "bg-secondary w-6" : "bg-white/30 hover:bg-white/60"}`}
+                    aria-label={`Go to slide ${idx + 1}`}
+                  />
+                ))}
               </div>
             </div>
           </div>
