@@ -79,6 +79,15 @@ export default function About() {
   const handleMouseEnter = () => { setIsHovered(true); stopTimer(); };
   const handleMouseLeave = () => { setIsHovered(false); startTimer(); };
 
+  const touchStartX = useRef<number | null>(null);
+  const handleTouchStart = (e: React.TouchEvent) => { touchStartX.current = e.touches[0].clientX; };
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) { diff > 0 ? next() : prev(); }
+    touchStartX.current = null;
+  };
+
   const getVisible = () => {
     return Array.from({ length: visibleCount }, (_, i) => teamMembers[(activeIndex + i) % total]);
   };
@@ -390,6 +399,8 @@ export default function About() {
                 className="grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-500"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
+                onTouchStart={handleTouchStart}
+                onTouchEnd={handleTouchEnd}
               >
                 {getVisible().map((member, i) => (
                   <div
