@@ -80,12 +80,32 @@ export default function About() {
   const handleMouseLeave = () => { setIsHovered(false); startTimer(); };
 
   const touchStartX = useRef<number | null>(null);
-  const handleTouchStart = (e: React.TouchEvent) => { touchStartX.current = e.touches[0].clientX; };
+  const touchStartY = useRef<number | null>(null);
+  const isSwiping = useRef(false);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    touchStartY.current = e.touches[0].clientY;
+    isSwiping.current = false;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (touchStartX.current === null || touchStartY.current === null) return;
+    const dx = Math.abs(e.touches[0].clientX - touchStartX.current);
+    const dy = Math.abs(e.touches[0].clientY - touchStartY.current);
+    if (dx > dy && dx > 10) {
+      isSwiping.current = true;
+      e.preventDefault();
+    }
+  };
+
   const handleTouchEnd = (e: React.TouchEvent) => {
-    if (touchStartX.current === null) return;
+    if (touchStartX.current === null || !isSwiping.current) return;
     const diff = touchStartX.current - e.changedTouches[0].clientX;
     if (Math.abs(diff) > 40) { diff > 0 ? next() : prev(); }
     touchStartX.current = null;
+    touchStartY.current = null;
+    isSwiping.current = false;
   };
 
   const getVisible = () => {
@@ -397,9 +417,11 @@ export default function About() {
               {/* Card Grid */}
               <div
                 className="grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-500"
+                style={{ touchAction: 'pan-y' }}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
                 onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
                 onTouchEnd={handleTouchEnd}
               >
                 {getVisible().map((member, i) => (
