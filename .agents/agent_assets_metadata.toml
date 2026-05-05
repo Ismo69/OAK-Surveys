@@ -36,3 +36,9 @@ id = "7WvsLswakAwTBJ28RsXby"
 uri = "file://attached_assets/stock_images/surveyor_instrument_field_3.jpg"
 type = "image"
 title = "surveyor with theodolite total station GPS on tripod measuring land outdoor field"
+
+[[outputs]]
+id = "kRV-K2qKaNrrn3Hw8Ht_q"
+uri = "file://project.zip"
+type = "unspecified"
+title = "Oak Surveys – Project Source Code"
