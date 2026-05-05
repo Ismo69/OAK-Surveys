@@ -7,6 +7,7 @@ import leadershipImage from "@assets/WhatsApp_Image_2026-04-16_at_17.47.11_17763
 import nisLogo from "@assets/nis_logo_whitebg-removebg-preview_1776247984208.png";
 import owoyomiImage from "@assets/WhatsApp_Image_2026-04-16_at_17.59.46_1776355512389.jpeg";
 import ridwanImage from "@assets/WhatsApp_Image_2026-05-04_at_16.00.38_(1)_1778008813784.jpeg";
+import rasheedImage from "@assets/20200903_090745.jpg_(2)_1778009033578.jpeg";
 
 const teamMembers = [
   {
@@ -26,28 +27,12 @@ const teamMembers = [
     photo: ridwanImage,
   },
   {
-    name: "Surv. T. Bello",
-    credentials: "",
-    role: "Hydrographic Surveyor",
-    bio: "Skilled in bathymetric surveys, dredging support, and coastal mapping for marine engineering and waterway development projects.",
-    initials: "TB",
-    photo: null,
-  },
-  {
-    name: "Surv. F. Adeyemi",
-    credentials: "",
-    role: "GIS & Remote Sensing Analyst",
-    bio: "Experienced in UAV photogrammetry, spatial data processing, and GIS database creation for urban planning and infrastructure mapping.",
-    initials: "FA",
-    photo: null,
-  },
-  {
-    name: "Surv. M. Danladi",
-    credentials: "",
-    role: "Geodetic Control Specialist",
-    bio: "Focuses on GPS/GNSS control network establishment and datum transformation for large-scale national and regional projects.",
-    initials: "MD",
-    photo: null,
+    name: "Rasheed Ayobamiji",
+    credentials: "B.Tech, AMNIS",
+    role: "Associate Surveyor & Team Lead",
+    bio: "A B.Tech graduate in Surveying & Geoinformatics from the Federal University of Technology, Akure (2nd Class Upper), Rasheed is an Associate Member of NIS and Registered Pupil Surveyor with over five years of experience. He leads survey operations at Oak Surveys across construction, topographical, and infrastructure projects — with a portfolio covering the Fifth Chukker Polo Club (2,000 Ha), Royal Garden Estate, Nestle Flowergate Factory, and major road works with Cappa & D'Alberto.",
+    initials: "RA",
+    photo: rasheedImage,
   },
 ];
 
