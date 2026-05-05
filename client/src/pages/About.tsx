@@ -6,6 +6,7 @@ import founderImage from "@assets/dad_pic_1773246913134.jpg";
 import leadershipImage from "@assets/WhatsApp_Image_2026-04-16_at_17.47.11_1776354977068.jpeg";
 import nisLogo from "@assets/nis_logo_whitebg-removebg-preview_1776247984208.png";
 import owoyomiImage from "@assets/WhatsApp_Image_2026-04-16_at_17.59.46_1776355512389.jpeg";
+import ridwanImage from "@assets/WhatsApp_Image_2026-05-04_at_16.00.38_(1)_1778008813784.jpeg";
 
 const teamMembers = [
   {
@@ -17,12 +18,12 @@ const teamMembers = [
     photo: owoyomiImage,
   },
   {
-    name: "Surv. C. Okonkwo",
-    credentials: "",
-    role: "Engineering Surveys Lead",
-    bio: "Specialises in setting-out, as-built surveys, and deformation monitoring for major road and bridge infrastructure projects.",
-    initials: "CO",
-    photo: null,
+    name: "Ridwan Olayinka Osuolale",
+    credentials: "MSc, MNIS",
+    role: "Surveyor",
+    bio: "A B.Sc. and M.Sc. graduate in Surveying & Geoinformatics from the University of Lagos and a Member of NIS, Ridwan has been with Oak Surveys since his industrial training in 2016. He brings hands-on experience across pipeline route, topographic, cadastral, engineering, and boundary surveys, with research spanning UAV-based traffic monitoring and geodetic control establishment.",
+    initials: "RO",
+    photo: ridwanImage,
   },
   {
     name: "Surv. T. Bello",
