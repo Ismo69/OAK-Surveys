@@ -24,6 +24,8 @@ async function sendContactNotification(data: {
   subject?: string | null;
   message: string;
 }) {
+  const resend = getResend();
+  if (!resend) return;
   try {
     await resend.emails.send({
       from: FROM_EMAIL,
@@ -76,7 +78,9 @@ async function sendSurveyRequestNotification(data: {
     gis: "GIS / Mapping",
     other: "Other",
   };
-
+  
+  const resend = getResend();
+  if (!resend) return;
   try {
     await resend.emails.send({
       from: FROM_EMAIL,
