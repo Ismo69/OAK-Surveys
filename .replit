@@ -37,7 +37,3 @@ waitForPort = 5000
 [agent]
 stack = "MOCKUP_JS"
 mockupState = "FULLSTACK"
-
-[[ports]]
-localPort = 5000
-externalPort = 80
