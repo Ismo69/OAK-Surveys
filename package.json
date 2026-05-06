@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
- "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-}
+  "scripts": {
+    "dev": "NODE_ENV=development tsx server/index.ts",
+    "build": "tsx script/build.ts",
+    "start": "NODE_ENV=production node dist/index.cjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
