@@ -5,7 +5,15 @@ import { storage } from "./storage";
 import { insertContactEnquirySchema, insertSurveyRequestSchema } from "@shared/schema";
 import { ZodError } from "zod";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const NOTIFY_EMAIL = "info@oaksurveys.com";
+const FROM_EMAIL = "notifications@oaksurveys.com";
+function getResend() {
+  if (!process.env.RESEND_API_KEY) {
+    console.warn("RESEND_API_KEY not set — email notifications disabled");
+    return null;
+  }
+  return new Resend(process.env.RESEND_API_KEY);
+}
 const NOTIFY_EMAIL = "info@oaksurveys.com";
 const FROM_EMAIL = "notifications@oaksurveys.com";
 
