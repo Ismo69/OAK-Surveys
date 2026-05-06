@@ -7,6 +7,7 @@ import { ZodError } from "zod";
 
 const NOTIFY_EMAIL = "info@oaksurveys.com";
 const FROM_EMAIL = "notifications@oaksurveys.com";
+
 function getResend() {
   if (!process.env.RESEND_API_KEY) {
     console.warn("RESEND_API_KEY not set — email notifications disabled");
@@ -14,8 +15,6 @@ function getResend() {
   }
   return new Resend(process.env.RESEND_API_KEY);
 }
-const NOTIFY_EMAIL = "info@oaksurveys.com";
-const FROM_EMAIL = "notifications@oaksurveys.com";
 
 async function sendContactNotification(data: {
   name: string;
